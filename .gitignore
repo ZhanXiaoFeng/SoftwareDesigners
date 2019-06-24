@@ -1,3 +1,5 @@
 
 .vs/SoftwareDesigners/v15/.suo
 *.db
+*.ipch
+.vs/SoftwareDesigners/v16/.suo
