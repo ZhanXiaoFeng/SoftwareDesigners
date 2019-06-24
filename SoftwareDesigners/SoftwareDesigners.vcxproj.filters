@@ -57,6 +57,9 @@
     <ClInclude Include="Chapter12.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="SortAndSearch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -102,6 +105,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Chapter12.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SortAndSearch.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
