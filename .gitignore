@@ -3,3 +3,11 @@
 *.db
 *.ipch
 .vs/SoftwareDesigners/v16/.suo
+*.pdb
+*.obj
+*.tlog
+*.log
+*.idb
+*.ilk
+*.ipch
+*.pch
