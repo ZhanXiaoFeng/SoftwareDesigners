@@ -728,6 +728,14 @@ namespace StatePattern
 		virtual string toString() = 0;
 	};
 
+	// 使用 Context 来查看当状态 State 改变时的行为变化
+	class Context {
+	public:
+		void setState(State *state) { state_ = state; }
+		State *getState() { return state_; }
+		State *state_;
+	};
+
 	class StartState : public State {
 	public:
 		void doAction(Context *context) { context->setState(this); }
@@ -739,13 +747,6 @@ namespace StatePattern
 		string toString() { return "Stop State"; }
 	};
 
-	// 使用 Context 来查看当状态 State 改变时的行为变化
-	class Context {
-	public:
-		void setState(State *state) { state_ = state; }
-		State *getState() { return state_; }
-		State *state_;
-	};
 
 	StatePattern::StatePattern()
 	{
@@ -855,10 +856,10 @@ namespace StrategyPattern
 		Context *context = new Context(new OperationAdd());
 		cout << "10 + 5 = " << context->executeStrategy(10, 5);
 
-		Context *context = new Context(new OperationSubstract());
+		Context *context1 = new Context(new OperationSubstract());
 		cout << "10 - 5 = " << context->executeStrategy(10, 5);
 
-		Context *context = new Context(new OperationMultiply());
+		Context *context2 = new Context(new OperationMultiply());
 		cout << "10 * 5 = " << context->executeStrategy(10, 5);
 	}
 }

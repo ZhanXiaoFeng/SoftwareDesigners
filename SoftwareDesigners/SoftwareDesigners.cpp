@@ -3,10 +3,44 @@
 
 #include "pch.h"
 #include <iostream>
+#ifdef WIN32
+#include <windows.h>
+#endif
+
+#include "Chapter1.h"
+#include "Chapter2.h"
+#include "Chapter3.h"
+#include "Chapter4.h"
+#include "Chapter5.h"
+#include "Chapter6.h"
+#include "Chapter7.h"
+#include "Chapter8.h"
+#include "Chapter9.h"
+#include "Chapter10.h"
+#include "Chapter11.h"
+#include "Chapter12.h"
 
 int main()
 {
     std::cout << "Hello World!\n"; 
+
+	Chapter1 c1;
+	Chapter2 c2;
+	Chapter3 c3;
+	Chapter4 c4;
+	Chapter5 c5;
+	Chapter6 c6;
+	Chapter7 c7;
+	Chapter8 c8;
+	Chapter9 c9;
+	Chapter10 c10;
+	Chapter11 c11;
+	Chapter12 c12;
+
+#ifdef WIN32
+	system("PAUSE");
+#endif
+	return 0;
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单

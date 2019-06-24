@@ -1,3 +1,11 @@
 
 .vs/SoftwareDesigners/v15/.suo
 *.db
+*.pdb
+*.obj
+*.tlog
+*.log
+*.idb
+*.ilk
+*.ipch
+*.pch
