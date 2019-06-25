@@ -3,22 +3,22 @@
 
 #include "pch.h"
 #include <iostream>
-#ifdef WIN32
+#ifdef _WIN32
 #include <windows.h>
 #endif
 
-#include "Chapter1.h"
-#include "Chapter2.h"
-#include "Chapter3.h"
-#include "Chapter4.h"
-#include "Chapter5.h"
-#include "Chapter6.h"
-#include "Chapter7.h"
-#include "Chapter8.h"
-#include "Chapter9.h"
-#include "Chapter10.h"
-#include "Chapter11.h"
-#include "Chapter12.h"
+#include "Chapter1.h"	//计算机系统知识
+#include "Chapter2.h"	//程序设计语言基础知识
+#include "Chapter3.h"	//数据结构
+#include "Chapter4.h"	//操作系统知识
+#include "Chapter5.h"	//软件工程基础知识
+#include "Chapter6.h"	//结构化开发方法
+#include "Chapter7.h"	//面向对象技术
+#include "Chapter8.h"	//算法设计与分析
+#include "Chapter9.h"	//数据库技术基础
+#include "Chapter10.h"	//网络与信息安全基础知识
+#include "Chapter11.h"	//标准化和软件知识产权基础知识
+#include "Chapter12.h"	//软件系统分析与设计
 
 int main()
 {
@@ -37,7 +37,7 @@ int main()
 	Chapter11 c11;
 	Chapter12 c12;
 
-#ifdef WIN32
+#ifdef _WIN32
 	system("PAUSE");
 #endif
 	return 0;
