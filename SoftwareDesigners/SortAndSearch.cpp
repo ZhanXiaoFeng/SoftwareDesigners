@@ -8,14 +8,15 @@ SortAndSearch::SortAndSearch()
 	std::default_random_engine e;
 	auto printArr = [](int arr[], int len) 
 	{
+		std::cout << "\n";
 		for (int i = 0; i < len; i++)
 			std::cout << arr[i] << " ";
 		std::cout << "\n";
 	};
 
-	const int LEN = 1024 * 1;
-	int *a = new int(LEN);
-	int *a2 = new int(LEN);
+	const int LEN = 256;
+	int *a = new int[LEN];
+	int *a2 = new int[LEN];
 	memset(a, 0, LEN);
 	memset(a2, 0, LEN);
 	for (int i = 0; i < LEN; i++)
@@ -29,8 +30,8 @@ SortAndSearch::SortAndSearch()
 	mergeSort(a, 0, LEN - 1, a2);
 
 	printArr(a, LEN);
-	delete a;
-	delete a2;
+	delete []a;
+	delete []a2;
 }
 
 

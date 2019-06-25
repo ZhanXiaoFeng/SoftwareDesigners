@@ -3,8 +3,20 @@
 
 #include "pch.h"
 #include <iostream>
-#ifdef WIN32
+
+#ifdef _WIN32
 #include <windows.h>
+#endif
+
+#ifdef _DEBUG
+#else
+#endif
+
+#if defined(_WINDOWS) || defined(WIN32)
+#endif
+
+#ifdef _WIN64
+#else
 #endif
 
 #include "Chapter1.h"
@@ -37,7 +49,7 @@ int main()
 	Chapter11 c11;
 	Chapter12 c12;
 
-#ifdef WIN32
+#ifdef _WIN32
 	system("PAUSE");
 #endif
 	return 0;
