@@ -3,5 +3,4 @@
 
 Chapter3::Chapter3()
 {
-	SortAndSearch s;
 }

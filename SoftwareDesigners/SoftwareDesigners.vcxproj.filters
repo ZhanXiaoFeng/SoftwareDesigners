@@ -57,15 +57,15 @@
     <ClInclude Include="Chapter12.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="SortAndSearch.h">
+    <ClInclude Include="Algorithm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructure.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="SoftwareDesigners.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="DesignPattern.cpp">
@@ -107,7 +107,13 @@
     <ClCompile Include="Chapter12.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="SortAndSearch.cpp">
+    <ClCompile Include="Algorithm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructure.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,7 +1,17 @@
 #include "pch.h"
-#include "SortAndSearch.h"
+#include "Algorithm.h"
 #include <iostream>
 #include <random>
+
+Algorithm::Algorithm()
+{
+
+}
+
+
+
+
+//////////////////////////////////////////////////////////////////////////
 
 SortAndSearch::SortAndSearch()
 {
@@ -21,7 +31,7 @@ SortAndSearch::SortAndSearch()
 	memset(a2, 0, LEN);
 	for (int i = 0; i < LEN; i++)
 		a[i] = e() % 1000;
-	printArr(a, LEN); //error
+	printArr(a, LEN);
 
 	//bubbleSort(a, LEN);
 	//quickSort(a, 0, LEN - 1);
@@ -34,10 +44,6 @@ SortAndSearch::SortAndSearch()
 	delete []a2;
 }
 
-
-SortAndSearch::~SortAndSearch()
-{
-}
 
 void SortAndSearch::bubbleSort(int arr[], int len)
 {
@@ -84,7 +90,7 @@ void SortAndSearch::quickSort(int arr[], int low, int high)
 	quickSort(arr, j + 1, high);
 }
 
-void SortAndSearch::insertSort(int arr[], int len)
+void SortAndSearch::insertionSort(int arr[], int len)
 {
 	for (int i = 1; i < len; i++)
 	{
@@ -98,7 +104,6 @@ void SortAndSearch::insertSort(int arr[], int len)
 		}
 	}
 }
-
 
 void SortAndSearch::shellSort(int arr[], int len)
 {
