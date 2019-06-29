@@ -16,53 +16,53 @@ using namespace std;
 * https://design-patterns.readthedocs.io/zh_CN/latest/read_uml.html
 * 
 * 设计模式的六大原则:
-*	1、开闭原则（Open Close Principle）
-* 	2、里氏代换原则（Liskov Substitution Principle）
-*	3、依赖倒转原则（Dependence Inversion Principle）
-*	4、接口隔离原则（Interface Segregation Principle）
-*	5、迪米特法则，又称最少知道原则（Demeter Principle）
-*	6、合成复用原则（Composite Reuse Principle）
+*	1、开闭原则    （Open Close Principle）				//开放扩展，关闭修改。程序扩展时不用修改源码，易于维护。
+* 	2、里氏代换原则（Liskov Substitution Principle）	//任何基类可以出现的地方，子类一定可以出现，程序不收影响。（开闭原则的补充）
+*	3、依赖倒转原则（Dependence Inversion Principle）	//针对接口编程，依赖于抽象而不依赖于具体。（开闭原则的基础）
+*	4、接口隔离原则（Interface Segregation Principle）	//使用多个隔离的接口，比使用单个接口要好。降低依赖，降低耦合。
+*	5、迪米特法则  （Demeter Principle）				//又称最少知道原则，一个实体应当尽量少地与其他实体之间发生相互作用。
+*	6、合成复用原则（Composite Reuse Principle）		//尽量使用合成/聚合的方式，而不是使用继承。
 * 
 * 创建型模式:
-*	工厂模式（Factory Pattern）
-*	抽象工厂模式（Abstract Factory Pattern）
-*	单例模式（Singleton Pattern）
-*	建造者模式（Builder Pattern）
-*	原型模式（Prototype Pattern）
+*	工厂模式    （Factory Pattern）						//利用工厂创建对象，而不是直接创建对象
+*	抽象工厂模式（Abstract Factory Pattern）			//在工厂的基础上，对工厂也进行抽象
+*	单例模式    （Singleton Pattern）					//最简单的设计模式之一，注意线程安全
+*	建造者模式  （Builder Pattern）						//对于复杂对象通过 "add item" 的方式组合生成
+*	原型模式    （Prototype Pattern）					//缓存对象，下次需要时进行拷贝
 * 
 * 结构型模式:
-*	适配器模式（Adapter Pattern）
-*	桥接模式（Bridge Pattern）
-*	过滤器模式（Filter、Criteria Pattern）
-*	组合模式（Composite Pattern）
-*	装饰器模式（Decorator Pattern）
-*	外观模式（Facade Pattern）
-*	享元模式（Flyweight Pattern）
-*	代理模式（Proxy Pattern）
+*	适配器模式（Adapter Pattern）						//对接口提供兼容的坚决方案，例如 VGA 转 HDMI 兼容显示器和显卡的接口
+*	桥接模式  （Bridge Pattern）						//把抽象化与实现化解耦，例如 painter 和 drawRect() 进行桥接
+*	过滤器模式（Filter、Criteria Pattern）				//过滤掉不需要的数据，例如 "任务管理器" 显示cpu、内存，除此之外不需要的数据都丢弃
+*	组合模式  （Composite Pattern）						//又叫部分整体模式，在一个对象中包含其他对象，像树一样连接
+*	装饰器模式（Decorator Pattern）						//在不修改已有类的情况下，通过其他类来实现增加接口的效果
+*	外观模式  （Facade Pattern）						//在不修改已有类的情况下，通过其他类来展示已有类的数据
+*	享元模式  （Flyweight Pattern）						//减少创建对象的数量，以减少内存占用和提高性能。尝试重用现有的同类对象。
+*	代理模式  （Proxy Pattern）							//适配器解决兼容问题，代理模式实现隔离
 * 
 * 行为型模式:
-*	责任链模式（Chain of Responsibility Pattern）
-*	命令模式（Command Pattern）
-*	解释器模式（Interpreter Pattern）
-*	迭代器模式（Iterator Pattern）
-*	中介者模式（Mediator Pattern）
-*	备忘录模式（Memento Pattern）
-*	观察者模式（Observer Pattern）
-*	状态模式（State Pattern）
-*	空对象模式（Null Object Pattern）
-*	策略模式（Strategy Pattern）
-*	模板模式（Template Pattern）
-*	访问者模式（Visitor Pattern）
+*	责任链模式（Chain of Responsibility Pattern）		//像面向过程一样依次执行，降低耦合，但是调试不方便且可能造成循环调用
+*	命令模式  （Command Pattern）						//类似 "cmd" 和 "shell"
+*	解释器模式（Interpreter Pattern）					//可利用场景比较少，主要用于解决高频问题，描述问题的各个实例，构建解释器来解决问题
+*	迭代器模式（Iterator Pattern）						//非常常用的设计模式。c/c++参考STL的iterator即可
+*	中介者模式（Mediator Pattern）						//降低多个对象和类之间的通信复杂性。MVC 中的控制器就属于中介
+*	备忘录模式（Memento Pattern）						//保存一个对象的某个状态，以便在适当的时候恢复对象。例如 "Ctrl + z" 
+*	观察者模式（Observer Pattern）						//当一个对象被修改时，通知所有观察者（遍历）
+*	状态模式  （State Pattern）							//状态模式对"开闭原则"的支持并不太好，在行为受状态约束的时候使用状态模式
+*	空对象模式（Null Object Pattern）					//用对象的控制判断 obj.isEmpty() 代替 obj == NULL
+*	策略模式  （Strategy Pattern）						//状态模式解决状态转移的问题，策略模式主要是用来封装一组可以互相替代的算法族
+*	模板模式  （Template Pattern）						//定义一套模板，例如 "init() -> start() -> end()"
+*	访问者模式（Visitor Pattern）						//对一个访问者类暴露接口。符合单一职责原则，违反了迪米特原则和依赖倒置原则。
 * 
 * J2EE 模式:
-*	MVC 模式（MVC Pattern）
-*	业务代表模式（Business Delegate Pattern）
-*	组合实体模式（Composite Entity Pattern）
+*	MVC 模式        （MVC Pattern）						//经典模型
+*	业务代表模式    （Business Delegate Pattern）
+*	组合实体模式    （Composite Entity Pattern）
 *	数据访问对象模式（Data Access Object Pattern）
-*	前端控制器模式（Front Controller Pattern）
-*	拦截过滤器模式（Intercepting Filter Pattern）
-*	服务定位器模式（Service Locator Pattern）
-*	传输对象模式（Transfer Object Pattern）
+*	前端控制器模式  （Front Controller Pattern）
+*	拦截过滤器模式  （Intercepting Filter Pattern）
+*	服务定位器模式  （Service Locator Pattern）
+*	传输对象模式    （Transfer Object Pattern）
 */
 class DesignPattern {
 public:

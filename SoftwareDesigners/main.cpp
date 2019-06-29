@@ -20,7 +20,7 @@
 #include "Chapter11.h"	//标准化和软件知识产权基础知识
 #include "Chapter12.h"	//软件系统分析与设计
 
-int main()
+int main() 
 {
     std::cout << "Hello World!\n"; 
 
