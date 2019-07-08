@@ -165,6 +165,7 @@
     <ClInclude Include="Chapter9.h" />
     <ClInclude Include="DataStructure.h" />
     <ClInclude Include="DesignPattern.h" />
+    <ClInclude Include="English.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Algorithm.h" />
   </ItemGroup>
@@ -183,6 +184,7 @@
     <ClCompile Include="Chapter9.cpp" />
     <ClCompile Include="DataStructure.cpp" />
     <ClCompile Include="DesignPattern.cpp" />
+    <ClCompile Include="English.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
