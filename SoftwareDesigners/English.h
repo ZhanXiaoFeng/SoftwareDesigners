@@ -1,695 +1,695 @@
 #pragma once
 
-//ÓĞĞ©·­ÒëÓĞÎÊÌâ ·¢ÏÖÁË¾Í¸Ä¹ıÀ´
+//æœ‰äº›ç¿»è¯‘æœ‰é—®é¢˜ å‘ç°äº†å°±æ”¹è¿‡æ¥
 
 
-/* ³£¼û¼ÆËã»ú´Ê»ã
+/* å¸¸è§è®¡ç®—æœºè¯æ±‡
 
-Abstract					³éÏóµÄ
-Abstraction					³éÏó
-Acceptance test				ÑéÊÕ²âÊÔ
-Acceptor					½ÓÊÕÆ÷
-Access control				·ÃÎÊ¿ØÖÆ
-Activation					»îÔ¾ÆÚ
-Active object				Ö÷¶¯¶ÔÏó
-Activity diagram			»î¶¯Í¼
-Actor						²ÎÓëÕß
-Actuator					´«¶¯Æ÷
-Adapter						ÊÊÅäÆ÷
-Addressing					Ñ°Ö·
-Agent						´úÀí
-Aggregation					¾ÛºÏ
-Agile Methodologies			Ãô½İ·½·¨Ñ§
-Algebra						´úÊıÑ§
-Algorithm					Ëã·¨
-Allocation					·ÖÅä
-Alphabet					×ÖÄ¸±í
-Alphabetize					°´×ÖÄ¸Ë³Ğò
-Amplify						·Å´ó
-Animation					¶¯»­
-Antenna						ÌìÏß
-Architecture				¹¹¼Ü
-Argument					ÒıÊı
-Aspect oriented				ÃæÏò·½ÃæµÄ
-Assembler					»ã±à³ÌĞò
-Assertion					¶ÏÑÔ
-Assessment					ÆÀ¹À
-Association rule			¹ØÁª¹æÔò
-Association					¹ØÁª
-Assumption					¼ÙÉè
-Asymmetric key encryption	·Ç¶Ô³ÆÃÜÔ¿¼ÓÃÜ
-Atomicity					Ô­×ÓĞÔ
-Attack tree					¹¥»÷Ê÷
-Attribute					ÌØĞÔ
-Authentication				ÈÏÖ¤
-Automation					×Ô¶¯¿ØÖÆ»¯
+Abstract					æŠ½è±¡çš„
+Abstraction					æŠ½è±¡
+Acceptance test				éªŒæ”¶æµ‹è¯•
+Acceptor					æ¥æ”¶å™¨
+Access control				è®¿é—®æ§åˆ¶
+Activation					æ´»è·ƒæœŸ
+Active object				ä¸»åŠ¨å¯¹è±¡
+Activity diagram			æ´»åŠ¨å›¾
+Actor						å‚ä¸è€…
+Actuator					ä¼ åŠ¨å™¨
+Adapter						é€‚é…å™¨
+Addressing					å¯»å€
+Agent						ä»£ç†
+Aggregation					èšåˆ
+Agile Methodologies			æ•æ·æ–¹æ³•å­¦
+Algebra						ä»£æ•°å­¦
+Algorithm					ç®—æ³•
+Allocation					åˆ†é…
+Alphabet					å­—æ¯è¡¨
+Alphabetize					æŒ‰å­—æ¯é¡ºåº
+Amplify						æ”¾å¤§
+Animation					åŠ¨ç”»
+Antenna						å¤©çº¿
+Architecture				æ„æ¶
+Argument					å¼•æ•°
+Aspect oriented				é¢å‘æ–¹é¢çš„
+Assembler					æ±‡ç¼–ç¨‹åº
+Assertion					æ–­è¨€
+Assessment					è¯„ä¼°
+Association rule			å…³è”è§„åˆ™
+Association					å…³è”
+Assumption					å‡è®¾
+Asymmetric key encryption	éå¯¹ç§°å¯†é’¥åŠ å¯†
+Atomicity					åŸå­æ€§
+Attack tree					æ”»å‡»æ ‘
+Attribute					ç‰¹æ€§
+Authentication				è®¤è¯
+Automation					è‡ªåŠ¨æ§åˆ¶åŒ–
 
-Backdoor					ºóÃÅ
-Backup						±¸·İ
-Barrier						¸ôÀë²ã¡¢¸ôÀëÎï
-Baseline					»ùÏß
-Batch						Åú
-Binary						¶ş½øÖÆ
-Black box testing			ºÚºĞ²âÊÔ
-Bluetooth					À¶ÑÀ¼¼Êõ
-Boolen algebra				²¼¶û´úÊı
-Bottleneck					Æ¿¾±
-Breakpoint					¶Ïµã
-Bridge						ÍøÇÅ
-Broadband					¿í´ø
-Buffer						»º³åÇø
-Bug							È±Ïİ
-Bundle						À¦°ó
-Business					ÒµÎñ¡¢ÉÌÒµ
+Backdoor					åé—¨
+Backup						å¤‡ä»½
+Barrier						éš”ç¦»å±‚ã€éš”ç¦»ç‰©
+Baseline					åŸºçº¿
+Batch						æ‰¹
+Binary						äºŒè¿›åˆ¶
+Black box testing			é»‘ç›’æµ‹è¯•
+Bluetooth					è“ç‰™æŠ€æœ¯
+Boolen algebra				å¸ƒå°”ä»£æ•°
+Bottleneck					ç“¶é¢ˆ
+Breakpoint					æ–­ç‚¹
+Bridge						ç½‘æ¡¥
+Broadband					å®½å¸¦
+Buffer						ç¼“å†²åŒº
+Bug							ç¼ºé™·
+Bundle						æ†ç»‘
+Business					ä¸šåŠ¡ã€å•†ä¸š
 
-Cable						µçÀÂ
-Cache						¸ßËÙ»º³å´æ´¢Æ÷
-Calculator					¼ÆËãÆ÷
-Call back					»Øµ÷
-Catalog						Ä¿Â¼
-Category					·¶³ë
-Certification				ÈÏÖ¤
-Channel						ĞÅµÀ
-Class diagram				ÀàÍ¼
-Cleanroom software engineering ¾»ÊÒÈí¼ş¹¤³Ì
-Clipboard					¼ôÌù°å
-Cohesion					ÄÚ¾Û
-Collaboration diagram		Ğ­×÷Í¼
-Collaboration				Ğ­×÷
-Combinatory Mathematics		×éºÏÊıÑ§
-Commerce					ÉÌÎñ
-Commit						Ìá½»
-Compact						½ô´ÕµÄ
-Compatibility				¼æÈİĞÔ
-Compile						±àÒë
-Compiler					±àÒëÆ÷
-Component					×é¼ş
-Composite					¸´ºÏ
-Computation					¼ÆËã
-Conceptual design			¸ÅÄîÉè¼Æ
-Concurrent					²¢·¢µÄ
-Confidential				»úÃÜµÄ
-Configuration				ÅäÖÃ
-Congestion					Óµ¼·¡¢×èÈû
-Connection pool				Á¬½Ó³Ø
-Connector					Á¬½Ó¼ş
-Consistency					Ò»ÖÂĞÔ
-Console						¿ØÖÆÌ¨
-Constrain					Ô¼Êø
-Container					ÈİÆ÷
-Context						ÉÏÏÂÎÄ
-Coordinate					×ø±ê
-Copyright					Öø×÷È¨
-Counter						¼ÆÊıÆ÷
-Coupling					ñîºÏ
-Cracker						º§¿Í
-Critical path				¹Ø¼üÂ·¾¶
-Critical section			ÁÙ½çÇø
-Crosscut					ºáÇĞ
-Crystal						Ë®¾§¡¢Ë®¾§·½·¨
+Cable						ç”µç¼†
+Cache						é«˜é€Ÿç¼“å†²å­˜å‚¨å™¨
+Calculator					è®¡ç®—å™¨
+Call back					å›è°ƒ
+Catalog						ç›®å½•
+Category					èŒƒç•´
+Certification				è®¤è¯
+Channel						ä¿¡é“
+Class diagram				ç±»å›¾
+Cleanroom software engineering å‡€å®¤è½¯ä»¶å·¥ç¨‹
+Clipboard					å‰ªè´´æ¿
+Cohesion					å†…èš
+Collaboration diagram		åä½œå›¾
+Collaboration				åä½œ
+Combinatory Mathematics		ç»„åˆæ•°å­¦
+Commerce					å•†åŠ¡
+Commit						æäº¤
+Compact						ç´§å‡‘çš„
+Compatibility				å…¼å®¹æ€§
+Compile						ç¼–è¯‘
+Compiler					ç¼–è¯‘å™¨
+Component					ç»„ä»¶
+Composite					å¤åˆ
+Computation					è®¡ç®—
+Conceptual design			æ¦‚å¿µè®¾è®¡
+Concurrent					å¹¶å‘çš„
+Confidential				æœºå¯†çš„
+Configuration				é…ç½®
+Congestion					æ‹¥æŒ¤ã€é˜»å¡
+Connection pool				è¿æ¥æ± 
+Connector					è¿æ¥ä»¶
+Consistency					ä¸€è‡´æ€§
+Console						æ§åˆ¶å°
+Constrain					çº¦æŸ
+Container					å®¹å™¨
+Context						ä¸Šä¸‹æ–‡
+Coordinate					åæ ‡
+Copyright					è‘—ä½œæƒ
+Counter						è®¡æ•°å™¨
+Coupling					è€¦åˆ
+Cracker						éª‡å®¢
+Critical path				å…³é”®è·¯å¾„
+Critical section			ä¸´ç•ŒåŒº
+Crosscut					æ¨ªåˆ‡
+Crystal						æ°´æ™¶ã€æ°´æ™¶æ–¹æ³•
 
-Data mining					Êı¾İÍÚ¾ò
-Data warehouse				Êı¾İ²Ö¿â
-Datagram					Êı¾İ±¨
-Debug						µ÷ÊÔ
-Decision theory				¾ö²ßÀíÂÛ
-Decision tree				¾ö²ßÊ÷
-Decompile					·´±àÒë
-Decryption					½âÃÜ
-Definition					¶¨Òå
-Delegate					´úÀí¡¢Î¯ÍĞ
-Delegated administration	Î¯ÍĞ¹ÜÀí
-Demo						Ñù±¾
-Demodulation				½âµ÷
-Dependency					ÒÀÀµ
-Deployment					²¿Êğ
-Derive						ÅÉÉú
-Descriptor					ÃèÊö·û\ÃèÊöÆ÷
-Design by contract			ÆõÔ¼Ê½Éè¼Æ
-Design pattern				Éè¼ÆÄ£Ê½
-Diagnostics					Õï¶Ï
-Digital certificate			Êı×ÖÖ¤Êé
-Digital signature			Êı×ÖÇ©Ãû
-Disassemble					·´»ã±à
-Discrete mathematics		ÀëÉ¢ÊıÑ§
-Divergent					·ÖÆç
-Dizzy						»ìÂÒµÄ
-Documentation				ÎÄµµ
-Domain model				ÓòÄ£ĞÍ
-Domain-specific				ÁìÓòÏà¹ØµÄ
-Dot product					µã»ı
-Driver						Çı¶¯³ÌĞò
-Duplex system				Ë«¹¤ÏµÍ³
-Duplex						Ë«¹¤
-Durability					³Ö¾ÃĞÔ
-Dynamic						¶¯Ì¬
+Data mining					æ•°æ®æŒ–æ˜
+Data warehouse				æ•°æ®ä»“åº“
+Datagram					æ•°æ®æŠ¥
+Debug						è°ƒè¯•
+Decision theory				å†³ç­–ç†è®º
+Decision tree				å†³ç­–æ ‘
+Decompile					åç¼–è¯‘
+Decryption					è§£å¯†
+Definition					å®šä¹‰
+Delegate					ä»£ç†ã€å§”æ‰˜
+Delegated administration	å§”æ‰˜ç®¡ç†
+Demo						æ ·æœ¬
+Demodulation				è§£è°ƒ
+Dependency					ä¾èµ–
+Deployment					éƒ¨ç½²
+Derive						æ´¾ç”Ÿ
+Descriptor					æè¿°ç¬¦\æè¿°å™¨
+Design by contract			å¥‘çº¦å¼è®¾è®¡
+Design pattern				è®¾è®¡æ¨¡å¼
+Diagnostics					è¯Šæ–­
+Digital certificate			æ•°å­—è¯ä¹¦
+Digital signature			æ•°å­—ç­¾å
+Disassemble					åæ±‡ç¼–
+Discrete mathematics		ç¦»æ•£æ•°å­¦
+Divergent					åˆ†æ­§
+Dizzy						æ··ä¹±çš„
+Documentation				æ–‡æ¡£
+Domain model				åŸŸæ¨¡å‹
+Domain-specific				é¢†åŸŸç›¸å…³çš„
+Dot product					ç‚¹ç§¯
+Driver						é©±åŠ¨ç¨‹åº
+Duplex system				åŒå·¥ç³»ç»Ÿ
+Duplex						åŒå·¥
+Durability					æŒä¹…æ€§
+Dynamic						åŠ¨æ€
 
-Electronics					µç×ÓÑ§
-Element						Ôª ËØ 
-Embedded  system			Ç¶ÈëÊ½ÏµÍ³
-Emulation					·ÂÕæ
-Encapsulation				·â×°
-Encryption					¼ÓÃÜ
-Engine						ÒıÇæ
-Entity						ÊµÌå
-Ethernet					ÒÔÌ«Íø
-Euclidean space				Å·ÊÏ¿Õ¼ä
-Even						Å¼Êı¡¢Å¼Ğ£Ñé
-Evolutionary				½ø»¯µÄ
-Exception					Òì³£
-Executable					¿ÉÖ´ĞĞµÄ
-Extension					À©Õ¹
-Extract						ÌáÈ¡
-Extranet					ÍâÁªÍø
+Electronics					ç”µå­å­¦
+Element						å…ƒ ç´  
+Embedded  system			åµŒå…¥å¼ç³»ç»Ÿ
+Emulation					ä»¿çœŸ
+Encapsulation				å°è£…
+Encryption					åŠ å¯†
+Engine						å¼•æ“
+Entity						å®ä½“
+Ethernet					ä»¥å¤ªç½‘
+Euclidean space				æ¬§æ°ç©ºé—´
+Even						å¶æ•°ã€å¶æ ¡éªŒ
+Evolutionary				è¿›åŒ–çš„
+Exception					å¼‚å¸¸
+Executable					å¯æ‰§è¡Œçš„
+Extension					æ‰©å±•
+Extract						æå–
+Extranet					å¤–è”ç½‘
 
-Facsimile					´«Õæ
-Fault tree					´íÎóÊ÷
-Fault-tolerant				Èİ´í
-Feasibility					¿ÉĞĞĞÔ
-Feedback					·´À¡
-Field						×Ö¶Î
-Filter						¹ıÂË
-Floppy disk					ÈíÅÌ
-Flow chart					Á÷³ÌÍ¼
-Flow control				Á÷Á¿¿ØÖÆ
-Foreign key					Íâ¼ü
-Format						¸ñÊ½¡¢¸ñÊ½»¯
-Framework					¿ò¼Ü
-Frame						Ö¡
-Frequency					ÆµÂÊ
-Function overloading		º¯ÊıÖØÔØ
-Function					¹¦ÄÜ¡¢º¯Êı
-Functional testing			¹¦ÄÜ²âÊÔ
-Fuzzy						Ä£ºıµÄ
+Facsimile					ä¼ çœŸ
+Fault tree					é”™è¯¯æ ‘
+Fault-tolerant				å®¹é”™
+Feasibility					å¯è¡Œæ€§
+Feedback					åé¦ˆ
+Field						å­—æ®µ
+Filter						è¿‡æ»¤
+Floppy disk					è½¯ç›˜
+Flow chart					æµç¨‹å›¾
+Flow control				æµé‡æ§åˆ¶
+Foreign key					å¤–é”®
+Format						æ ¼å¼ã€æ ¼å¼åŒ–
+Framework					æ¡†æ¶
+Frame						å¸§
+Frequency					é¢‘ç‡
+Function overloading		å‡½æ•°é‡è½½
+Function					åŠŸèƒ½ã€å‡½æ•°
+Functional testing			åŠŸèƒ½æµ‹è¯•
+Fuzzy						æ¨¡ç³Šçš„
 
-Game theory					¶Ô²ßÂÛ
-Gantt chart					¸ÊÌØÍ¼
-Gateway						Íø¹Ø
-Generative					ÔÙÉúµÄ
-Generic programming			·ºĞÍ±à³Ì
-Generic						·ºĞÍ
-Geometric					¼¸ºÎµÄ
-Global						È«¾ÖµÄ
-Granularity					Á£¶È
-Graph theory				Í¼ÂÛ
-Grey box testing			»ÒºĞ²âÊÔ
-Grid						Íø¸ñ
-Guaranteed delivery			¿É¿¿ĞÔ´«Êä
+Game theory					å¯¹ç­–è®º
+Gantt chart					ç”˜ç‰¹å›¾
+Gateway						ç½‘å…³
+Generative					å†ç”Ÿçš„
+Generic programming			æ³›å‹ç¼–ç¨‹
+Generic						æ³›å‹
+Geometric					å‡ ä½•çš„
+Global						å…¨å±€çš„
+Granularity					ç²’åº¦
+Graph theory				å›¾è®º
+Grey box testing			ç°ç›’æµ‹è¯•
+Grid						ç½‘æ ¼
+Guaranteed delivery			å¯é æ€§ä¼ è¾“
 
-Hacker						ºÚ¿Í
-Handle						¾ä±ú
-Handwriting recognition		ÊÖĞ´Ê¶±ğ
-Harness						Ô¼Êø
-Hashtable					¹şÏ£±í
-Heap						¶Ñ
-Hierarchical				²ã´ÎµÄ¡¢ÌåÏµµÄ
-High availability			¸ß¿ÉÓÃĞÔ
-Hook						¹³×Ó
-Human factors engineering	ÈËÒò¹¤³Ì
-Hybrid programming			»ìºÏ±à³Ì
-Hypermedia					³¬Ã½Ìå
-Hypertext					³¬ÎÄ±¾
-Hypothetical				¼Ù¶¨µÄ
+Hacker						é»‘å®¢
+Handle						å¥æŸ„
+Handwriting recognition		æ‰‹å†™è¯†åˆ«
+Harness						çº¦æŸ
+Hashtable					å“ˆå¸Œè¡¨
+Heap						å †
+Hierarchical				å±‚æ¬¡çš„ã€ä½“ç³»çš„
+High availability			é«˜å¯ç”¨æ€§
+Hook						é’©å­
+Human factors engineering	äººå› å·¥ç¨‹
+Hybrid programming			æ··åˆç¼–ç¨‹
+Hypermedia					è¶…åª’ä½“
+Hypertext					è¶…æ–‡æœ¬
+Hypothetical				å‡å®šçš„
 
-Icon						Í¼±ê
-Identifier					±êÊ¶·û
-Imagebase					»ùµØÖ·
-Increment					ÔöÁ¿
-Incremental integration	testing ×éºÏ²âÊÔ
-Infer						ÍÆÀí
-Information hiding			ĞÅÏ¢Òş²Ø
-Infrastructure				ÏÂ²¿¹¹Ôì¡¢»ù´¡µÄÏÂ²¿×éÖ¯
-Inheritance					¼Ì³Ğ
-Initialize					³õÊ¼»¯
-Install						°²×°
-Instance					ÊµÀı
-Instruction					Ö¸Áî
-Integration testing			¼¯³É²âÊÔ
-Integration					¼¯³É
-Intelligence				ÖÇÄÜ
-Intensity					Ç¿µ÷
-Interceptor					À¹½ØÆ÷
-Intermediate				ÖĞ¼äµÄ
-Internationalization		¹ú¼Ê»¯
-Interpret					½âÊÍ
-Intranet					ÄÚ²¿Íø¡¢ÆóÒµÍø
-Inversion					·´×ª
-Invoke						µ÷ÓÃ
-Isolation					¹ÂÁ¢ĞÔ
-Isomorphic					Í¬¹¹µÄ
-Iterative					µü´ú
-Iterator					µü´úÆ÷
+Icon						å›¾æ ‡
+Identifier					æ ‡è¯†ç¬¦
+Imagebase					åŸºåœ°å€
+Increment					å¢é‡
+Incremental integration	testing ç»„åˆæµ‹è¯•
+Infer						æ¨ç†
+Information hiding			ä¿¡æ¯éšè—
+Infrastructure				ä¸‹éƒ¨æ„é€ ã€åŸºç¡€çš„ä¸‹éƒ¨ç»„ç»‡
+Inheritance					ç»§æ‰¿
+Initialize					åˆå§‹åŒ–
+Install						å®‰è£…
+Instance					å®ä¾‹
+Instruction					æŒ‡ä»¤
+Integration testing			é›†æˆæµ‹è¯•
+Integration					é›†æˆ
+Intelligence				æ™ºèƒ½
+Intensity					å¼ºè°ƒ
+Interceptor					æ‹¦æˆªå™¨
+Intermediate				ä¸­é—´çš„
+Internationalization		å›½é™…åŒ–
+Interpret					è§£é‡Š
+Intranet					å†…éƒ¨ç½‘ã€ä¼ä¸šç½‘
+Inversion					åè½¬
+Invoke						è°ƒç”¨
+Isolation					å­¤ç«‹æ€§
+Isomorphic					åŒæ„çš„
+Iterative					è¿­ä»£
+Iterator					è¿­ä»£å™¨
 	
-Join point					Á¬½Óµã
+Join point					è¿æ¥ç‚¹
 
-Kernel						ÄÚºË
+Kernel						å†…æ ¸
 
-Large-scale					´ó¹æÄ£µÄ
-License						Ğí¿ÉÖ¤
-Life cycle					ÉúÃüÖÜÆÚ
-Lifeline					ÉúÃüÏß
-Linear						ÏßĞÔµÄ
-Linearization				ÏßĞÔ»¯
-Linguistics					ÓïÑÔÑ§
-Liquid-crystal				Òº¾§µÄ
-Load testing				¸ºÔØ²âÊÔ
-Load-balanced				¸ºÔØ¾ùºâµÄ
-Location					±¾µØ
-Logics						Âß¼­Ñ§
+Large-scale					å¤§è§„æ¨¡çš„
+License						è®¸å¯è¯
+Life cycle					ç”Ÿå‘½å‘¨æœŸ
+Lifeline					ç”Ÿå‘½çº¿
+Linear						çº¿æ€§çš„
+Linearization				çº¿æ€§åŒ–
+Linguistics					è¯­è¨€å­¦
+Liquid-crystal				æ¶²æ™¶çš„
+Load testing				è´Ÿè½½æµ‹è¯•
+Load-balanced				è´Ÿè½½å‡è¡¡çš„
+Location					æœ¬åœ°
+Logics						é€»è¾‘å­¦
 
-Macro						ºê
-Magnetic					´ÅĞÔµÄ
-Maintenance					Î¬»¤
-Managed execution			ÍĞ¹ÜÖ´ĞĞ
-Manual						ÊÖ²á
-Mapping						Ó³Éä¹æÔò
-Marshalling					±à×é¡¢·âËÍ
-Matrix						¾ØÕó
-Mechanism					»úÖÆ
-Mentor						µ¼Ê¦
-Merge						¹é²¢
-Method						·½·¨
-Microwave					Î¢²¨
-Middleware					ÖĞ¼ä¼ş
-Migration					ÒÆÖ²
-Mirror						¾µÏñ¡¢¾µ×Ó
-Modem						µ÷ÖÆ½âµ÷Æ÷
-Modulation					µ÷ÖÆ
-Module coupling				Ä£¿éñîºÏ
-Module						Ä£¿é¡¢×é¼ş
-Monitor						¼àÊÓÆ÷
-Motherboard					Ö÷°å
-Multiprogramming			¶àµÀ³ÌĞòÉè¼Æ
-Multithreading				¶àÏß³Ì
-Mutation					±äÒì
+Macro						å®
+Magnetic					ç£æ€§çš„
+Maintenance					ç»´æŠ¤
+Managed execution			æ‰˜ç®¡æ‰§è¡Œ
+Manual						æ‰‹å†Œ
+Mapping						æ˜ å°„è§„åˆ™
+Marshalling					ç¼–ç»„ã€å°é€
+Matrix						çŸ©é˜µ
+Mechanism					æœºåˆ¶
+Mentor						å¯¼å¸ˆ
+Merge						å½’å¹¶
+Method						æ–¹æ³•
+Microwave					å¾®æ³¢
+Middleware					ä¸­é—´ä»¶
+Migration					ç§»æ¤
+Mirror						é•œåƒã€é•œå­
+Modem						è°ƒåˆ¶è§£è°ƒå™¨
+Modulation					è°ƒåˆ¶
+Module coupling				æ¨¡å—è€¦åˆ
+Module						æ¨¡å—ã€ç»„ä»¶
+Monitor						ç›‘è§†å™¨
+Motherboard					ä¸»æ¿
+Multiprogramming			å¤šé“ç¨‹åºè®¾è®¡
+Multithreading				å¤šçº¿ç¨‹
+Mutation					å˜å¼‚
 
-Namespace					Ãû×Ö¿Õ¼ä
-Natural language			×ÔÈ»ÓïÑÔ
-Navigation					¶¨Î»¡¢º½ĞĞ
-Neural network				Éñ¾­ÍøÂç
-Novice						³õÑ§Õß
-Number theory				ÊıÂÛ
-Numerical computation		ÊıÖµ¼ÆËã
+Namespace					åå­—ç©ºé—´
+Natural language			è‡ªç„¶è¯­è¨€
+Navigation					å®šä½ã€èˆªè¡Œ
+Neural network				ç¥ç»ç½‘ç»œ
+Novice						åˆå­¦è€…
+Number theory				æ•°è®º
+Numerical computation		æ•°å€¼è®¡ç®—
 
-Open source					¿ª·ÅÔ´´úÂë
-Operator					²Ù×÷·û
-Optical fiber				¹âÏË
-Optical						ÊÓÁ¦µÄ¡¢¹âÑ§µÄ
-Optimization				ÓÅ»¯
-Orthogonal					Õı½»
-Outsourcing					Íâ°ü
-Over-engineering			¹ı¶ÈÉè¼Æ
-Overflow					Òç³ö
-Overload					ÖØÔØ
-Override					¸²¸Ç
+Open source					å¼€æ”¾æºä»£ç 
+Operator					æ“ä½œç¬¦
+Optical fiber				å…‰çº¤
+Optical						è§†åŠ›çš„ã€å…‰å­¦çš„
+Optimization				ä¼˜åŒ–
+Orthogonal					æ­£äº¤
+Outsourcing					å¤–åŒ…
+Over-engineering			è¿‡åº¦è®¾è®¡
+Overflow					æº¢å‡º
+Overload					é‡è½½
+Override					è¦†ç›–
 
-Package						°ü
-Pair programming			½á¶Ô±à³Ì
-Panel						Ãæ°å
-Paradigm					·ºÀı
-Parameter					²ÎÊı
-Parity						ÆæÅ¼
-Pattern matching			Ä£Ê½Æ¥Åä
-Peer-to-peer computing		¶ÔµÈ¼ÆËã
-Performance testing			ĞÔÄÜ²âÊÔ
-Performance					ĞÔÄÜ
-Peripheral					ÍâÉè
-Persistence					³Ö¾ÃĞÔ
-Personalize					Ê¹¸öĞÔ»¯
-Pipelining					Á÷Ë®Ïß
-Pixel						ÏñËØ
-Platform independent		Æ½Ì¨ÎŞ¹Ø
-Platform invoke				Æ½Ì¨µ÷ÓÃ
-Platform					Æ½Ì¨
-Plug-in						²å¼ş
-Pointer						Ö¸Õë
-Policy						²ßÂÔ
-Polymer						¾ÛºÏÌå
-Polymorphism				¶àÌ¬
-Port						¶Ë¿Ú
-Portability					¿ÉÒÆÖ²ĞÔ
-Portal						ÃÅ»§
-Prepositional logic			ÃüÌâÂß¼­
-Preprocessor				Ô¤´¦Àí³Ì
-Primary key					Ö÷¼ü
-Priority					ÓÅÏÈÈ¨
-Probability theory			¸ÅÂÊÂÛ
-Procedure					¹ı³Ì
-Process						´¦Àí
-Processor					´¦ÀíÆ÷
-Production					²úÉúÊ½¡¢³É¹û¡¢²úÆ·
-Profile						¿ò¼Ü¡¢ÂÖÀª
-Projection					Í¶Ó°
-Property					ÊôĞÔ
-Protocol					Ğ­Òé
-Prototyping development	approach ĞÍ»¯¿ª·¢·½·¨
-Proxy						´úÀí
-Pruning node				ĞŞ¼ô½áµã
-Pseudocode					Î±´úÂë
+Package						åŒ…
+Pair programming			ç»“å¯¹ç¼–ç¨‹
+Panel						é¢æ¿
+Paradigm					æ³›ä¾‹
+Parameter					å‚æ•°
+Parity						å¥‡å¶
+Pattern matching			æ¨¡å¼åŒ¹é…
+Peer-to-peer computing		å¯¹ç­‰è®¡ç®—
+Performance testing			æ€§èƒ½æµ‹è¯•
+Performance					æ€§èƒ½
+Peripheral					å¤–è®¾
+Persistence					æŒä¹…æ€§
+Personalize					ä½¿ä¸ªæ€§åŒ–
+Pipelining					æµæ°´çº¿
+Pixel						åƒç´ 
+Platform independent		å¹³å°æ— å…³
+Platform invoke				å¹³å°è°ƒç”¨
+Platform					å¹³å°
+Plug-in						æ’ä»¶
+Pointer						æŒ‡é’ˆ
+Policy						ç­–ç•¥
+Polymer						èšåˆä½“
+Polymorphism				å¤šæ€
+Port						ç«¯å£
+Portability					å¯ç§»æ¤æ€§
+Portal						é—¨æˆ·
+Prepositional logic			å‘½é¢˜é€»è¾‘
+Preprocessor				é¢„å¤„ç†ç¨‹
+Primary key					ä¸»é”®
+Priority					ä¼˜å…ˆæƒ
+Probability theory			æ¦‚ç‡è®º
+Procedure					è¿‡ç¨‹
+Process						å¤„ç†
+Processor					å¤„ç†å™¨
+Production					äº§ç”Ÿå¼ã€æˆæœã€äº§å“
+Profile						æ¡†æ¶ã€è½®å»“
+Projection					æŠ•å½±
+Property					å±æ€§
+Protocol					åè®®
+Prototyping development	approach å‹åŒ–å¼€å‘æ–¹æ³•
+Proxy						ä»£ç†
+Pruning node				ä¿®å‰ªç»“ç‚¹
+Pseudocode					ä¼ªä»£ç 
 
-Quota						¶¨¶î
+Quota						å®šé¢
 
-Reactor						·´Ó¦Æ÷
-Real-time					ÊµÊ±µÄ
-Recovery testing			»Ö¸´²âÊÔ
-Redundancy					ÈßÓà
-Refabricate					ÖØ¹¹
-Reference type				Ó¦ÓÃÀàĞÍ
-Reference					ÒıÓÃ
-Referential integrity		²ÎÕÕÍêÕûĞÔ
-Reflection					·´Éä
-Register					×¢²á
-Regular expression			ÕıÔò±í´ïÊ½
-Relational algebra			¹ØÏµ´úÊı
-Relational databases model	¹ØÏµÊı¾İ¿âÄ£ĞÍ                                                               Release	·¢²¼
-Remote						Ô¶³ÌµÄ
-Repeater					ÖĞ¼ÌÆ÷
-Replication					¸´ÖÆ
-Repository					Êı¾İ²Ö¿â¡¢²Ö¿â
-Resident					³£×¤µÄ
-Resolution					·Ö±æÂÊ¡¢¾ö¶¨µÄ
-Responsiveness				ÏìÓ¦
-Retrieve					¼ìË÷
-Reusability					¸´ÓÃĞÔ
-Reverse engineering			ÄæÏò¹¤³Ì
-Robot						»úÆ÷ÈË
-Robust						½¡×³µÄ
-Rollback					»Ø¹ö
-Router						Â·ÓÉÆ÷
+Reactor						ååº”å™¨
+Real-time					å®æ—¶çš„
+Recovery testing			æ¢å¤æµ‹è¯•
+Redundancy					å†—ä½™
+Refabricate					é‡æ„
+Reference type				åº”ç”¨ç±»å‹
+Reference					å¼•ç”¨
+Referential integrity		å‚ç…§å®Œæ•´æ€§
+Reflection					åå°„
+Register					æ³¨å†Œ
+Regular expression			æ­£åˆ™è¡¨è¾¾å¼
+Relational algebra			å…³ç³»ä»£æ•°
+Relational databases model	å…³ç³»æ•°æ®åº“æ¨¡å‹                                                               Release	å‘å¸ƒ
+Remote						è¿œç¨‹çš„
+Repeater					ä¸­ç»§å™¨
+Replication					å¤åˆ¶
+Repository					æ•°æ®ä»“åº“ã€ä»“åº“
+Resident					å¸¸é©»çš„
+Resolution					åˆ†è¾¨ç‡ã€å†³å®šçš„
+Responsiveness				å“åº”
+Retrieve					æ£€ç´¢
+Reusability					å¤ç”¨æ€§
+Reverse engineering			é€†å‘å·¥ç¨‹
+Robot						æœºå™¨äºº
+Robust						å¥å£®çš„
+Rollback					å›æ»š
+Router						è·¯ç”±å™¨
 
-Sandbox						É°Ïä
-Satellite					ÈËÔìÎÀĞÇ
-Scan						É¨Ãè
-Scheduling					µ÷¶È
-Schema						Ä£Ê½¡¢½á¹¹¡¢·½°¸
-Scheme						·½°¸¡¢ÏµÍ³
-Script						½Å±¾
-Search engine				ËÑË÷ÒıÇæ
-Security testing			°²È«²âÊÔ
-Security					°²È«ĞÔ
-Segment						¶Î
-Semantic					ÓïÒåµÄ
-Semiconductor				°ëµ¼Ìå
-Sensor						´«¸ĞÆ÷
-Sequential					Ë³ĞòµÄ
-Serial						´®ĞĞµÄ
-Serialize					´®ĞĞ»¯
-Server cluster				·şÎñÆ÷¼¯Èº
-Set theory					¼¯ºÏÂÛ
-Set-top box					»ú¶¥ºĞ
-Shading						Í¶Ó°
-Shareware					¹²ÏíÈí¼ş
-Side effect					¸±×÷ÓÃ
-Signature					Ç©Ãû
-Silicon						¹è
-Simplex						µ¥¹¤
-Simulation					Ä£Äâ
-Simultaneous				Í¬²½µÄ
-Smart pointer				ÖÇÄÜÖ¸Õë
-Sockets layer				Ì×½Ó²ã
-Software reuse				Èí¼ş¸´ÓÃ
-Solution					½â¾ö·½°¸
-Sophisticated				¸ß¼¶µÄ¡¢¸´ÔÓµÄ
-Speech recognition			ÓïÒôÊ¶±ğ
-Speech synthesis ?			ÓïÒôºÏ³É
-Spiral model				ÂİĞıÄ£ĞÍ
-Spreadsheet					Í¼±í
-Spyware						¼äµıÈí¼ş
-Stack						Õ»
-Standardize					Ê¹±ê×¼»¯
-Statistical					Í³¼ÆµÄ
-Stored procedure			´æ´¢¹ı³Ì
-Strategy					²ßÂÔ
-Stream						Á÷
-Stress testing				Ñ¹Á¦²âÊÔ
-String						´®
-Stub						´æ¸ù
-Subject						Ö÷Ìå
-Subnet						×ÓÍø
-Substantial					ÊµÖÊµÄ
-Supercomputer				³¬¼¶¼ÆËã»ú
-Symbol						·ûºÅ
-Synchronize					Ê¹Í¬²½
-Syntactic					Óï·¨µÄ
-System analyst				ÏµÍ³·ÖÎöÔ±
-System testing				ÏµÍ³²âÊÔ
+Sandbox						ç ‚ç®±
+Satellite					äººé€ å«æ˜Ÿ
+Scan						æ‰«æ
+Scheduling					è°ƒåº¦
+Schema						æ¨¡å¼ã€ç»“æ„ã€æ–¹æ¡ˆ
+Scheme						æ–¹æ¡ˆã€ç³»ç»Ÿ
+Script						è„šæœ¬
+Search engine				æœç´¢å¼•æ“
+Security testing			å®‰å…¨æµ‹è¯•
+Security					å®‰å…¨æ€§
+Segment						æ®µ
+Semantic					è¯­ä¹‰çš„
+Semiconductor				åŠå¯¼ä½“
+Sensor						ä¼ æ„Ÿå™¨
+Sequential					é¡ºåºçš„
+Serial						ä¸²è¡Œçš„
+Serialize					ä¸²è¡ŒåŒ–
+Server cluster				æœåŠ¡å™¨é›†ç¾¤
+Set theory					é›†åˆè®º
+Set-top box					æœºé¡¶ç›’
+Shading						æŠ•å½±
+Shareware					å…±äº«è½¯ä»¶
+Side effect					å‰¯ä½œç”¨
+Signature					ç­¾å
+Silicon						ç¡…
+Simplex						å•å·¥
+Simulation					æ¨¡æ‹Ÿ
+Simultaneous				åŒæ­¥çš„
+Smart pointer				æ™ºèƒ½æŒ‡é’ˆ
+Sockets layer				å¥—æ¥å±‚
+Software reuse				è½¯ä»¶å¤ç”¨
+Solution					è§£å†³æ–¹æ¡ˆ
+Sophisticated				é«˜çº§çš„ã€å¤æ‚çš„
+Speech recognition			è¯­éŸ³è¯†åˆ«
+Speech synthesis ?			è¯­éŸ³åˆæˆ
+Spiral model				èºæ—‹æ¨¡å‹
+Spreadsheet					å›¾è¡¨
+Spyware						é—´è°è½¯ä»¶
+Stack						æ ˆ
+Standardize					ä½¿æ ‡å‡†åŒ–
+Statistical					ç»Ÿè®¡çš„
+Stored procedure			å­˜å‚¨è¿‡ç¨‹
+Strategy					ç­–ç•¥
+Stream						æµ
+Stress testing				å‹åŠ›æµ‹è¯•
+String						ä¸²
+Stub						å­˜æ ¹
+Subject						ä¸»ä½“
+Subnet						å­ç½‘
+Substantial					å®è´¨çš„
+Supercomputer				è¶…çº§è®¡ç®—æœº
+Symbol						ç¬¦å·
+Synchronize					ä½¿åŒæ­¥
+Syntactic					è¯­æ³•çš„
+System analyst				ç³»ç»Ÿåˆ†æå‘˜
+System testing				ç³»ç»Ÿæµ‹è¯•
 
-Template					Ä£°å
-Terminal					ÖÕ¶Ë
-Terminology					ÊõÓï
-Tertiary					µÚÈı·½µÄ
-Test case					²âÊÔÓÃÀı
-Test  Driven  development	²âÊÔÇı¶¯¿ª·¢
-Thread pool					Ïß³Ì³Ø
-Thread						Ïß³Ì
-Threshold					ãĞÖµ
-Throughput					ÍÌÍÂÁ¿
-Time-slicing				Ê±¼äÆ¬
-Token						ÁîÅÆ
-Top-down programming		×Ô¶¥ÏòÏÂ³ÌĞòÉè¼Æ
-Topology					ÍØÆË£¨½á¹¹£©
-Tow-way						Ë«ÏòµÄ
-Track						×·×Ù
-Transaction					ÊÂÎñ
-Transformation				×ª»»
-Transistor					¾§Ìå¹Ü
-Trigger						´¥·¢Æ÷
-Tuple space					Ôª×é¿Õ¼ä
+Template					æ¨¡æ¿
+Terminal					ç»ˆç«¯
+Terminology					æœ¯è¯­
+Tertiary					ç¬¬ä¸‰æ–¹çš„
+Test case					æµ‹è¯•ç”¨ä¾‹
+Test  Driven  development	æµ‹è¯•é©±åŠ¨å¼€å‘
+Thread pool					çº¿ç¨‹æ± 
+Thread						çº¿ç¨‹
+Threshold					é˜ˆå€¼
+Throughput					ååé‡
+Time-slicing				æ—¶é—´ç‰‡
+Token						ä»¤ç‰Œ
+Top-down programming		è‡ªé¡¶å‘ä¸‹ç¨‹åºè®¾è®¡
+Topology					æ‹“æ‰‘ï¼ˆç»“æ„ï¼‰
+Tow-way						åŒå‘çš„
+Track						è¿½è¸ª
+Transaction					äº‹åŠ¡
+Transformation				è½¬æ¢
+Transistor					æ™¶ä½“ç®¡
+Trigger						è§¦å‘å™¨
+Tuple space					å…ƒç»„ç©ºé—´
 
-Unicode						¹ú¼ÊË«×Ö½Ú±àÂë
-Uninstall					Ğ¶ÔØ
-Unit testing				µ¥Ôª²âÊÔ
-Unmarshalling				·´±à×é¡¢²ğÊÕ
-Upward  compatible			ÏòÉÏ¼æÈİµÄ
-Use case					ÓÃÀı
-User identity				ÓÃ»§Éí·İÈÏÖ¤
-Utility						Ğ§ÓÃ¡¢¹¤¾ß
+Unicode						å›½é™…åŒå­—èŠ‚ç¼–ç 
+Uninstall					å¸è½½
+Unit testing				å•å…ƒæµ‹è¯•
+Unmarshalling				åç¼–ç»„ã€æ‹†æ”¶
+Upward  compatible			å‘ä¸Šå…¼å®¹çš„
+Use case					ç”¨ä¾‹
+User identity				ç”¨æˆ·èº«ä»½è®¤è¯
+Utility						æ•ˆç”¨ã€å·¥å…·
 
-Vacuum tube					Õæ¿Õ¹Ü
-Value chain					¼ÛÖµÁ´
-Variable-length array		¿É±ä³¤Êı×é
-Variance					±ä¶¯¡¢Ğ­±ä
-Vector						Ê¸Á¿
-Velocity					ËÙÂÊ
-Vibration					Õğµ´
-View						ÊÓÍ¼
-Violation					³åÍ»
-Virtual memery				ĞéÄâÄÚ´æ
-Virtual						ĞéÄâµÄ
-Virus						²¡¶¾
-Visual						¿ÉÊÓ»¯µÄ
+Vacuum tube					çœŸç©ºç®¡
+Value chain					ä»·å€¼é“¾
+Variable-length array		å¯å˜é•¿æ•°ç»„
+Variance					å˜åŠ¨ã€åå˜
+Vector						çŸ¢é‡
+Velocity					é€Ÿç‡
+Vibration					éœ‡è¡
+View						è§†å›¾
+Violation					å†²çª
+Virtual memery				è™šæ‹Ÿå†…å­˜
+Virtual						è™šæ‹Ÿçš„
+Virus						ç—…æ¯’
+Visual						å¯è§†åŒ–çš„
 
-Wafer						¾§Æ¬
-Waterfall method			ÆÙ²¼·½·¨
-Webservice					Web·şÎñ
-White box testing			°×ºĞ²âÊÔ
-Workflow					¹¤×÷Á÷
-Workplace					¹¤×÷Çø
-Workstation					¹¤×÷Õ¾
-Worm						Èä³æ²¡¶¾
-
-*/
-
-/* ³£¼ûËõÂÔÓï
-
-ACE£¨adaptive communication environment£©£º ¿ÉÊÊÅäÍ¨ĞÅÈí¼ş¿ª·¢»·¾³
-ACM£¨association for computing machinery£©£ºÃÀ¹ú¼ÆËã»úÑ§»á
-ADO£¨ActiveX data objects£©£º	ActiveXÊı¾İ¶ÔÏó
-ADSL£¨asymmetrical  digital subscriber line£©£º	·Ç¶Ô³ÆÊı×ÖÓÃ»§»·Â·
-AI£¨artificial intelligence£©£º	ÈË¹¤ÖÇÄÜ
-AMI£¨asynchronous message invocation£©£º	Òì²½ÏûÏ¢
-ANSI£¨American national standards institute£©£º ÃÀ¹ú¹ú¼Ò±ê×¼»¯Ğ­»á
-AOP£¨aspect oriented programming£©£º	ÃæÏò·½Ãæ±à³Ì
-AP£¨application plan£©£º	Ó¦ÓÃ³ÌĞò¹æ»®
-API£¨application programming interface£©£º	Ó¦ÓÃ±à³Ì½Ó¿Ú
-ARP£¨address resolution protocol£©£º	µØÖ·½âÎöĞ­Òé
-ASCII £¨American standard code for information interchange£©£ºÃÀ¹ú¹ú¼ÒĞÅÏ¢½»»»±ê×¼Âë
-ASD£¨adaptive software development£©£º		×ÔÊÊÓ¦Èí¼ş¿ª·¢
-ASP£¨active server page£©£º	¶¯Ì¬·şÎñÆ÷Ò³¼¼Êõ
-ATM£¨asynchronous transfer model£©£º	Òì²½´«ÊäÄ£Ê½
-
-B/S£¨browser/server£©£º	ä¯ÀÀÆ÷/·şÎñÆ÷½á¹¹
-B2B£¨business  to  business electronic commerce£©£º	ÆóÒµ¶ÔÆóÒµµÄµç×ÓÉÌÎñ
-B2C£¨business  to  consumer electronic commerce£©£º		ÆóÒµ¶Ô¿Í»§µÄµç×ÓÉÌÎñ
-
-C/S£¨client/server£©£º	¿Í»§¶Ë/·şÎñÆ÷½á¹¹
-CAD£¨computer aided design£©£º	¼ÆËã»ú¸¨ÖúÉè¼Æ
-CASE£¨computer aided software engineering£©£º	¼ÆËã»ú¸¨ÖúÈí¼ş¹¤³Ì
-CDMA£¨code division multiple access£©£º	Âë·Ö¶àÖ·¼¼Êõ
-CGA£¨color graphics adapter£©£º	²ÊÉ«Í¼ĞÎÊÊÅäÆ÷
-CIM£¨computer ¨Cintegrated manufacturing£©£º	¼ÆËã»ú¼¯³ÉÖÆÔì¼¼Êõ
-CISC£¨complex instruction set computer£©£º				¸´ÔÓÖ¸Áî¼¯¼ÆËã»ú
-CLI£¨common intermediate language£©£º		Í¨ÓÃÖĞ¼äÓïÑÔ
-CLR£¨common language runtime£©£º		¹«¹²ÓïÑÔÔËĞĞ»·¾³
-CLS£¨common  language  specification£©£º		¹«¹²ÓïÑÔ¹æ·¶
-CMM£¨capability maturity model£©£º		ÄÜÁ¦³ÉÊì¶ÈÄ£ĞÍ
-CMMI£¨capability maturity model integration£©£º		ÄÜÁ¦³ÉÊì¶ÈÄ£ĞÍ×ÛºÏ
-CMP£¨container managed persistence£©£º			ÈİÆ÷¹ÜÀíÊı¾İÒ»ÖÂĞÔ
-COM£¨component object model£©£º	×é¼ş¶ÔÏóÄ£ĞÍ
-CORBA£¨common object request broker architecture£©£º¹«¹²¶ÔÏóÇëÇó´úÀíÌåÏµ½á¹¹
-CRC£¨cyclic redundancy check£©£º	Ñ­»·ÈßÓàĞ£Ñé
-CRM£¨customer  relationship  management£©£º	¿Í»§¹ØÏµ¹ÜÀí
-CSMA/CD£¨carrier sense multiple access collision detect£©£ºÔØ²¨ÕìÌı¶àÂ··ÃÎÊ/³åÍ»¼ì²â
-
-DAO£¨data access object£©£º	Êı¾İ·ÃÎÊ¶ÔÏó
-DBA£¨database administrator£©£º	Êı¾İ¿â¹ÜÀíÔ±
-DBMS£¨database management system£©£º	Êı¾İ¿â¹ÜÀíÏµÍ³
-DCE	£¨distributed computing environment£©£º	·Ö²¼Ê½¼ÆËã»ú»·¾³
-DCOM   £¨distributed component object model£©£º		·Ö²¼Ê½×é¼ş¶ÔÏóÄ£ĞÍ
-DFA	£¨deterministic finite automaton£©£º	È·¶¨ÓĞÏŞ×´Ì¬×Ô¶¯»ú
-DFD	£¨dataflow diagram£©£º	Êı¾İÁ÷Í¼
-DHTML£¨dynamic hypertext markup language£©£º	¶¯Ì¬³¬ÎÄ±¾±ê¼ÇÓïÑÔ
-DLL	£¨dynamic-link library£©£º	¶¯Ì¬Á´½Ó¿â
-DNS	£¨domain name System£©£º	ÓòÃûÏµÍ³DoS£¨denial of service£©£º	¾Ü¾ø·şÎñ¹¥»÷
-DSDM£¨dynamic system development method£©£º	¶¯Ì¬ÏµÍ³¿ª·¢·½·¨
-DSS	£¨decision support system£©£º	¾ö²ßÖ§³ÖÏµÍ³
-
-ECC£¨error correction£©£º	¾À´íÂë
-ECO£¨enterprise  core  object£©£º		ÆóÒµºËĞÄ¶ÔÏó
-EDI£¨electronic data interchange£©£º µç×ÓÊı¾İ½»»»
-EJB£¨enterprise javabean£©£º		Æó Òµ 
-Javabean ERD£¨entity-relationship  diagram£©£º	ÊµÌåÁªÏµÍ¼
-ERP£¨enterprise resource planning£©£º	ÆóÒµ×ÊÔ´¼Æ»®
-ES£¨expert system£©£º	×¨¼ÒÏµÍ³
-
-FAT£¨file allocation table£©£º		ÎÄ¼ş·ÖÅä±í
-FDD£¨feature-driven development£©£º	ÌØÕ÷Çı¶¯¿ª·¢
-FIFO£¨first-in first-out£©£º	ÏÈ½øÏÈ³ö
-FTP£¨file transfer protocol£©£º			ÎÄ¼ş´«ÊäĞ­Òé
-
-GA£¨genetic algorithm£©£º	ÒÅ´«Ëã·¨
-GC£¨garbage collection£©£º		ÄÚ´æÀ¬»øÊÕ¼¯
-GIS£¨geographic information system£©£º		µØÀíĞÅÏ¢ÏµÍ³
-GPS	£¨global positioning system£©£º	È«Çò¶¨Î»ÏµÍ³
-GSM£¨global system for mobile communication£©£ºÈ«ÇòÒÆ¶¯Í¨ĞÅÏµÍ³
-GUI£¨graphics user interface£©£º	Í¼ĞÎÓÃ»§½çÃæ
-
-HTML£¨hypertext  markup  language£©£º	³¬ÎÄ±¾±ê¼ÇÓïÑÔ±ê×¼
-HTTP      £¨hypertext transfer protocol£©£º		³¬ÎÄ±¾´«ÊäĞ­Òé
-
-IC£¨integrated circuit£©£º	¼¯³ÉµçÂ·
-ICMP£¨Internet control message protocol£©£º	Íø¼Ê±¨ÎÄ¿ØÖÆĞ­Òé
-IDE£¨integration development environment£©£º		¼¯³É¿ª·¢»·¾³
-IDS£¨intrusion detection system£©£º	ÈëÇÖ¼ì²âÏµÍ³
-IEEE£¨institute for electrical and electronic engineers£©£ºÃÀ¹úµçÆøµç×Ó¹¤³ÌÊ¦Ñ§»á
-IGMP£¨Internet group multicast protocol£©£º	Íø¼Ê³É×é¶àÂ·¹ã²¥Ğ­Òé
-IP£¨nternet protocol£©£º	Íø¼ÊĞ­Òé
-IPC£¨interprocess communication£©£º		½ø³Ì¼äÍ¨ĞÅ
-IPS£¨intrusion prevention system£©£º	ÈëÇÖ·À»¤ÏµÍ³
-ISA£¨industry standard organization£©£º			¹¤Òµ±ê×¼»¯×éÖ¯
-ISDN£¨integrated  services  digital  network£©£º	×ÛºÏÊı×ÖÒµÎñÍø
-ISO£¨international organization for standardization£©£º¹ú¼Ê±ê×¼»¯×éÖ¯
-ISP£¨Internet service provider£©£º	ÒòÌØÍø·şÎñÌá¹©ÉÌ
-
-J2EE£¨Java  2 enterprise edition£©£º		Java 2ÆóÒµ°æ
-J2ME£¨Java  2 micro edition£©£º		Java 2ĞäÕä°æ
-J2SE£¨Java  2  sdk standard edition£©£º			Java 2±ê×¼°æ
-JDBC£¨Java database connectivity£©£º		JavaÊı¾İ¿âÁ¬½Ó
-JDK£¨Java developer's Kit£©£º	Java¿ª·¢¹¤¾ß°ü
-JDO£¨Java database object£©£º	JavaÊı¾İ¶ÔÏó
-JPEG£¨joint photo-graphic experts group£©£º	ÁªºÏÍ¼Ïñ×¨¼Ò×é£¨Ñ¹Ëõ±ê×¼£© 
-JSP£¨Java server page£©£º	Java·şÎñÆ÷Ò³Ãæ¼¼Êõ
-JVM  £¨Java virtual machine£©£º		JavaĞéÄâ»ú
-
-LAN  £¨local-area network£©£º	¾ÖÓòÍø
-
-MAC   £¨media access control£©£º	½é ÖÊ ·Ã ÎÊ ¿Ø ÖÆ 
-MAN  £¨metropolitan-area network£©£º		³Ç Óò Íø
-MDA   £¨model driven architecture£©£º	Ä£ĞÍÇı¶¯¹¹¼Ü
-MFC    £¨Microsoft foundation class£©£º		Î¢Èí¹«Ë¾VC++Àà¿âÃû
-MIMD  £¨multiple instruction multiple data£©£º  ¶àÖ¸Áî¶àÊı¾İ
-MIS   £¨management information system£©£º   ¹ÜÀíĞÅÏ¢ÏµÍ³
-MOF   £¨managed object format£©£º	¹ÜÀíµÄ¶ÔÏó¸ñÊ½
-MPEG   £¨moving picture experts group£©£º	ÔË¶¯Í¼Ïñ×¨¼Ò×é£¨±ê×¼£© 
-MSDN   £¨Microsoft developer network£©£º		Î¢Èí¿ª·¢ÕßÍøÂç
-MUD   £¨multiple user dimension£©£º		¶àÈËÎÄ×Ö½ÇÉ«°çÑİÓÎÏ·
-MVC  £¨model-view-controller£©£º	ÎÄµµ-ÊÓÍ¼-¿ØÖÆÄ£Ê½
-
-NFS    £¨network filing system£©£º		ÍøÂçÎÄ¼şÏµÍ³
-
-OA   £¨office automation£©£º	°ì¹«×Ô¶¯»¯
-OCL  £¨object constraint language£©£º	¶ÔÏóÔ¼ÊøÓïÑÔ
-OCR  £¨optical character recognition£©£º		¹âÑ§×Ö·ûÊ¶±ğ
-ODBC  £¨open database connectivity£©£º			¿ª·ÅÊı¾İ¿âÁ¬½Ó
-OEM £¨original equipment manufacture£©£º Ô­Ê¼Éè±¸ÖÆÔìÉÌ
-OLAP  £¨online analytical processing£©£º	Áª»ú·ÖÎö´¦Àí
-OLE £¨object linking and embedding£©£º ¶ÔÏóÁ´½ÓºÍÇ¶Èë
-OMG   £¨the  object management group£©£º	¶ÔÏó¹ÜÀí×éÖ¯
-OMT   £¨object modeling technique£©£º	¶ÔÏó½¨Ä£¼¼Êõ
-OO   £¨object oriented£©£º	ÃæÏò¶ÔÏóµÄ
-OOD   £¨object oriented design£©£º	ÃæÏò¶ÔÏóµÄÉè¼Æ
-OOP   £¨object oriented programming£©£º	ÃæÏò¶ÔÏóµÄ±à³Ì
-ORB   £¨object request broker£©£º	¶ÔÏóÇëÇó´úÀí
-OSI £¨open system interconnect reference model£©£º¿ª·ÅÊ½ÏµÍ³»¥Áª²Î¿¼Ä£ĞÍ
-OWL   £¨object window library£©£º	¶ÔÏó´°¿Ú¿â
-
-PCI	£¨peripheral component interconnect£©£ºÍâ²¿Éè±¸»¥Áª
-PHP    £¨PHP hypertext preprocessor£©£º	PHP³¬ÎÄ±¾´¦ÀíÆ÷£¨ÓïÑÔÃû£¬µİ¹é¶¨Òå£© 
-POP3 £¨post office protocol, Version 3£©£ºµç×ÓÓÊ¾ÖĞ­Òé£¬°æ±¾3
-PSP     £¨personal software process£©£º	¸öÌåÈí¼ş¹ı³Ì
-
-QA    £¨quality assurance£©£º	ÖÊÁ¿±£Ö¤
-QoS    £¨quality of service£©£º	·şÎñÖÊÁ¿
-
-RAD   £¨rapid application development£©£º	¿ìËÙÓ¦ÓÃ³ÌĞò¿ª·¢
-RAM  £¨random-access memory£©£º	Ëæ»ú´æ´¢Æ÷
-RAP    £¨Internet route access protocol£©£º	Íø¼ÊÂ·ÓÉ´æÈ¡Ğ­Òé
-RARP £¨reverse address resolution protocol£©£º ÄæÏòµØÖ·½âÎöĞ­Òé
-RDF £¨resource description framework£©£º×ÊÔ´ÃèÊö¿ò¼Ü
-RIP	£¨routing information protocol£©£º	Â·ÓÉĞÅÏ¢Ğ­Òé
-RISC £¨reduced instruction set computer£©£º ¾«¼òÖ¸Áî¼¯¼ÆËã»ú
-RMI	£¨remote method invocation£©£º	Ô¶³Ì·½·¨µ÷ÓÃ
-ROM  £¨read-only memory£©£º	Ö»¶Á´æ´¢Æ÷
-RPC	£¨remote procedure call protocol£©£º	Ô¶¹ı³Ìµ÷ÓÃĞ­Òé
-RPG	£¨role play games£©£º	½ÇÉ«°çÑİÓÎÏ·
-RUP	£¨Rational unified process£©£º	ÈğÀí¹«Ë¾Èí¼şÍ³Ò»¿ª·¢¹ı³Ì
-
-SCM £¨software configuration management£©£º  Èí¼şÅäÖÃ¹ÜÀí
-SDK	£¨software development Kit£©£º		Èí¼ş¿ª·¢¹¤¾ß°ü
-SMP	£¨symmetric multi processing£©£º	¶Ô³Æ¶à´¦ÀíÏµÍ³
-SMTP  £¨simple mail transfer protocol£©£º		¼òµ¥ÓÊ¼ş´«ÊäĞ­Òé
-SNMP £¨simple network management protocol£©£º ¼òµ¥ÍøÂç¹ÜÀíĞ­Òé
-SOAP £¨simple object access protocol£©£º ¼òµ¥¶ÔÏó·ÃÎÊĞ­Òé
-SQL		£¨structured query language£©£º		½á¹¹»¯²éÑ¯ÓïÑÔ
-STL	£¨standard template library£©£º	±ê×¼Ä£°å¿â
-
-TCP	£¨transmission control protocol£©£º	´«Êä¿ØÖÆĞ­Òé
-TSP	£¨team software process£©£º	ÍÅ¶ÓÈí¼ş¹ı³Ì
-
-UDDI £¨universal description, discovery and integration£©£ºÍ³Ò»ÃèÊö¡¢·¢ÏÖºÍ¼¯³ÉĞ­Òé
-UDP	£¨user datagram protocol£©£º	ÓÃ»§Êı¾İ±¨Ğ­Òé
-UI	£¨user interface£©£º	ÓÃ»§½çÃæ
-UML    £¨the unified modeling language£©£º	Í³Ò»½¨Ä£ÓïÑÔ
-UP	£¨unified process£©£º	Í³Ò»Èí¼ş¿ª·¢¹ı³Ì
-URL	£¨uniform resource locators£©£º	Í¨ÓÃ×ÊÔ´¶¨Î»·û±ê×¼
-USB	£¨universal serial bus£©£º	Í¨ÓÃ´®ĞĞ×ÜÏß
-
-VAS	£¨value-added serve£©£º	ÔöÖµ·şÎñ
-VCD		£¨video compact disc£©£º		ÊÓÆµ¹âÅÌ
-VCL	£¨visual component library£©£º ¿ÉÊÓ»¯¹¹¼ş¿â
-VGA    £¨video graphics adapter£©£º	ÊÓÆµÍ¼ĞÎÊÊÅäÆ÷
-VLAN  £¨virtual local-area network£©£º		ĞéÄâ¾ÖÓòÍø
-VOD    £¨video on demand£©£º	ÊÓÆµµã²¥ÏµÍ³
-VPN	£¨virtual private network£©£º	ĞéÄâ×¨ÓÃÍøÂç
-VRML £¨virtual reality modeling language£©£º ĞéÄâÏÖÊµ½¨Ä£ÓïÑÔ
-
-W3C    £¨world wide web consortium£©£º	ÍòÎ¬ÍøÁªÃË
-WAN    £¨wide-area network£©£º	¹ãÓòÍø
-WAP    £¨wireless application protocol£©£º		ÎŞÏßÓ¦ÓÃĞ­Òé
-WCDMA£¨wideband code division multiple access£©£º¶àÆµÂë·Ö¶àÖ·¼¼Êõ
-WLAN   £¨wireless local-area network£©£º	ÎŞÏß¾ÖÓòÍø
-WSDL £¨web service description language£©£ºWeb·şÎñÃèÊöÓïÑÔ
-WWW   £¨world wide web£©£º	ÍòÎ¬Íø
-
-XAML £¨extensible application markup language£©£º¿ÉÀ©Õ¹Ó¦ÓÃ³ÌĞò±ê¼ÇÓïÑÔ
-XML    £¨extensible markup language£©£º	¿ÉÀ©Õ¹±ê¼ÇÓïÑÔ
-XP	£¨extreme programming£©£º	¼«ÏŞ±à³Ì
+Wafer						æ™¶ç‰‡
+Waterfall method			ç€‘å¸ƒæ–¹æ³•
+Webservice					WebæœåŠ¡
+White box testing			ç™½ç›’æµ‹è¯•
+Workflow					å·¥ä½œæµ
+Workplace					å·¥ä½œåŒº
+Workstation					å·¥ä½œç«™
+Worm						è •è™«ç—…æ¯’
 
 */
 
-/* ÔÄ¶ÁËØ²Ä
+/* å¸¸è§ç¼©ç•¥è¯­
 
-£¨1£©Unix was originally developed at Bell Laboratories as a reaction to the large, complex, 
+ACEï¼ˆadaptive communication environmentï¼‰ï¼š å¯é€‚é…é€šä¿¡è½¯ä»¶å¼€å‘ç¯å¢ƒ
+ACMï¼ˆassociation for computing machineryï¼‰ï¼šç¾å›½è®¡ç®—æœºå­¦ä¼š
+ADOï¼ˆActiveX data objectsï¼‰ï¼š	ActiveXæ•°æ®å¯¹è±¡
+ADSLï¼ˆasymmetrical  digital subscriber lineï¼‰ï¼š	éå¯¹ç§°æ•°å­—ç”¨æˆ·ç¯è·¯
+AIï¼ˆartificial intelligenceï¼‰ï¼š	äººå·¥æ™ºèƒ½
+AMIï¼ˆasynchronous message invocationï¼‰ï¼š	å¼‚æ­¥æ¶ˆæ¯
+ANSIï¼ˆAmerican national standards instituteï¼‰ï¼š ç¾å›½å›½å®¶æ ‡å‡†åŒ–åä¼š
+AOPï¼ˆaspect oriented programmingï¼‰ï¼š	é¢å‘æ–¹é¢ç¼–ç¨‹
+APï¼ˆapplication planï¼‰ï¼š	åº”ç”¨ç¨‹åºè§„åˆ’
+APIï¼ˆapplication programming interfaceï¼‰ï¼š	åº”ç”¨ç¼–ç¨‹æ¥å£
+ARPï¼ˆaddress resolution protocolï¼‰ï¼š	åœ°å€è§£æåè®®
+ASCII ï¼ˆAmerican standard code for information interchangeï¼‰ï¼šç¾å›½å›½å®¶ä¿¡æ¯äº¤æ¢æ ‡å‡†ç 
+ASDï¼ˆadaptive software developmentï¼‰ï¼š		è‡ªé€‚åº”è½¯ä»¶å¼€å‘
+ASPï¼ˆactive server pageï¼‰ï¼š	åŠ¨æ€æœåŠ¡å™¨é¡µæŠ€æœ¯
+ATMï¼ˆasynchronous transfer modelï¼‰ï¼š	å¼‚æ­¥ä¼ è¾“æ¨¡å¼
+
+B/Sï¼ˆbrowser/serverï¼‰ï¼š	æµè§ˆå™¨/æœåŠ¡å™¨ç»“æ„
+B2Bï¼ˆbusiness  to  business electronic commerceï¼‰ï¼š	ä¼ä¸šå¯¹ä¼ä¸šçš„ç”µå­å•†åŠ¡
+B2Cï¼ˆbusiness  to  consumer electronic commerceï¼‰ï¼š		ä¼ä¸šå¯¹å®¢æˆ·çš„ç”µå­å•†åŠ¡
+
+C/Sï¼ˆclient/serverï¼‰ï¼š	å®¢æˆ·ç«¯/æœåŠ¡å™¨ç»“æ„
+CADï¼ˆcomputer aided designï¼‰ï¼š	è®¡ç®—æœºè¾…åŠ©è®¾è®¡
+CASEï¼ˆcomputer aided software engineeringï¼‰ï¼š	è®¡ç®—æœºè¾…åŠ©è½¯ä»¶å·¥ç¨‹
+CDMAï¼ˆcode division multiple accessï¼‰ï¼š	ç åˆ†å¤šå€æŠ€æœ¯
+CGAï¼ˆcolor graphics adapterï¼‰ï¼š	å½©è‰²å›¾å½¢é€‚é…å™¨
+CIMï¼ˆcomputer â€“integrated manufacturingï¼‰ï¼š	è®¡ç®—æœºé›†æˆåˆ¶é€ æŠ€æœ¯
+CISCï¼ˆcomplex instruction set computerï¼‰ï¼š				å¤æ‚æŒ‡ä»¤é›†è®¡ç®—æœº
+CLIï¼ˆcommon intermediate languageï¼‰ï¼š		é€šç”¨ä¸­é—´è¯­è¨€
+CLRï¼ˆcommon language runtimeï¼‰ï¼š		å…¬å…±è¯­è¨€è¿è¡Œç¯å¢ƒ
+CLSï¼ˆcommon  language  specificationï¼‰ï¼š		å…¬å…±è¯­è¨€è§„èŒƒ
+CMMï¼ˆcapability maturity modelï¼‰ï¼š		èƒ½åŠ›æˆç†Ÿåº¦æ¨¡å‹
+CMMIï¼ˆcapability maturity model integrationï¼‰ï¼š		èƒ½åŠ›æˆç†Ÿåº¦æ¨¡å‹ç»¼åˆ
+CMPï¼ˆcontainer managed persistenceï¼‰ï¼š			å®¹å™¨ç®¡ç†æ•°æ®ä¸€è‡´æ€§
+COMï¼ˆcomponent object modelï¼‰ï¼š	ç»„ä»¶å¯¹è±¡æ¨¡å‹
+CORBAï¼ˆcommon object request broker architectureï¼‰ï¼šå…¬å…±å¯¹è±¡è¯·æ±‚ä»£ç†ä½“ç³»ç»“æ„
+CRCï¼ˆcyclic redundancy checkï¼‰ï¼š	å¾ªç¯å†—ä½™æ ¡éªŒ
+CRMï¼ˆcustomer  relationship  managementï¼‰ï¼š	å®¢æˆ·å…³ç³»ç®¡ç†
+CSMA/CDï¼ˆcarrier sense multiple access collision detectï¼‰ï¼šè½½æ³¢ä¾¦å¬å¤šè·¯è®¿é—®/å†²çªæ£€æµ‹
+
+DAOï¼ˆdata access objectï¼‰ï¼š	æ•°æ®è®¿é—®å¯¹è±¡
+DBAï¼ˆdatabase administratorï¼‰ï¼š	æ•°æ®åº“ç®¡ç†å‘˜
+DBMSï¼ˆdatabase management systemï¼‰ï¼š	æ•°æ®åº“ç®¡ç†ç³»ç»Ÿ
+DCE	ï¼ˆdistributed computing environmentï¼‰ï¼š	åˆ†å¸ƒå¼è®¡ç®—æœºç¯å¢ƒ
+DCOM   ï¼ˆdistributed component object modelï¼‰ï¼š		åˆ†å¸ƒå¼ç»„ä»¶å¯¹è±¡æ¨¡å‹
+DFA	ï¼ˆdeterministic finite automatonï¼‰ï¼š	ç¡®å®šæœ‰é™çŠ¶æ€è‡ªåŠ¨æœº
+DFD	ï¼ˆdataflow diagramï¼‰ï¼š	æ•°æ®æµå›¾
+DHTMLï¼ˆdynamic hypertext markup languageï¼‰ï¼š	åŠ¨æ€è¶…æ–‡æœ¬æ ‡è®°è¯­è¨€
+DLL	ï¼ˆdynamic-link libraryï¼‰ï¼š	åŠ¨æ€é“¾æ¥åº“
+DNS	ï¼ˆdomain name Systemï¼‰ï¼š	åŸŸåç³»ç»ŸDoSï¼ˆdenial of serviceï¼‰ï¼š	æ‹’ç»æœåŠ¡æ”»å‡»
+DSDMï¼ˆdynamic system development methodï¼‰ï¼š	åŠ¨æ€ç³»ç»Ÿå¼€å‘æ–¹æ³•
+DSS	ï¼ˆdecision support systemï¼‰ï¼š	å†³ç­–æ”¯æŒç³»ç»Ÿ
+
+ECCï¼ˆerror correctionï¼‰ï¼š	çº é”™ç 
+ECOï¼ˆenterprise  core  objectï¼‰ï¼š		ä¼ä¸šæ ¸å¿ƒå¯¹è±¡
+EDIï¼ˆelectronic data interchangeï¼‰ï¼š ç”µå­æ•°æ®äº¤æ¢
+EJBï¼ˆenterprise javabeanï¼‰ï¼š		ä¼ ä¸š 
+Javabean ERDï¼ˆentity-relationship  diagramï¼‰ï¼š	å®ä½“è”ç³»å›¾
+ERPï¼ˆenterprise resource planningï¼‰ï¼š	ä¼ä¸šèµ„æºè®¡åˆ’
+ESï¼ˆexpert systemï¼‰ï¼š	ä¸“å®¶ç³»ç»Ÿ
+
+FATï¼ˆfile allocation tableï¼‰ï¼š		æ–‡ä»¶åˆ†é…è¡¨
+FDDï¼ˆfeature-driven developmentï¼‰ï¼š	ç‰¹å¾é©±åŠ¨å¼€å‘
+FIFOï¼ˆfirst-in first-outï¼‰ï¼š	å…ˆè¿›å…ˆå‡º
+FTPï¼ˆfile transfer protocolï¼‰ï¼š			æ–‡ä»¶ä¼ è¾“åè®®
+
+GAï¼ˆgenetic algorithmï¼‰ï¼š	é—ä¼ ç®—æ³•
+GCï¼ˆgarbage collectionï¼‰ï¼š		å†…å­˜åƒåœ¾æ”¶é›†
+GISï¼ˆgeographic information systemï¼‰ï¼š		åœ°ç†ä¿¡æ¯ç³»ç»Ÿ
+GPS	ï¼ˆglobal positioning systemï¼‰ï¼š	å…¨çƒå®šä½ç³»ç»Ÿ
+GSMï¼ˆglobal system for mobile communicationï¼‰ï¼šå…¨çƒç§»åŠ¨é€šä¿¡ç³»ç»Ÿ
+GUIï¼ˆgraphics user interfaceï¼‰ï¼š	å›¾å½¢ç”¨æˆ·ç•Œé¢
+
+HTMLï¼ˆhypertext  markup  languageï¼‰ï¼š	è¶…æ–‡æœ¬æ ‡è®°è¯­è¨€æ ‡å‡†
+HTTP      ï¼ˆhypertext transfer protocolï¼‰ï¼š		è¶…æ–‡æœ¬ä¼ è¾“åè®®
+
+ICï¼ˆintegrated circuitï¼‰ï¼š	é›†æˆç”µè·¯
+ICMPï¼ˆInternet control message protocolï¼‰ï¼š	ç½‘é™…æŠ¥æ–‡æ§åˆ¶åè®®
+IDEï¼ˆintegration development environmentï¼‰ï¼š		é›†æˆå¼€å‘ç¯å¢ƒ
+IDSï¼ˆintrusion detection systemï¼‰ï¼š	å…¥ä¾µæ£€æµ‹ç³»ç»Ÿ
+IEEEï¼ˆinstitute for electrical and electronic engineersï¼‰ï¼šç¾å›½ç”µæ°”ç”µå­å·¥ç¨‹å¸ˆå­¦ä¼š
+IGMPï¼ˆInternet group multicast protocolï¼‰ï¼š	ç½‘é™…æˆç»„å¤šè·¯å¹¿æ’­åè®®
+IPï¼ˆnternet protocolï¼‰ï¼š	ç½‘é™…åè®®
+IPCï¼ˆinterprocess communicationï¼‰ï¼š		è¿›ç¨‹é—´é€šä¿¡
+IPSï¼ˆintrusion prevention systemï¼‰ï¼š	å…¥ä¾µé˜²æŠ¤ç³»ç»Ÿ
+ISAï¼ˆindustry standard organizationï¼‰ï¼š			å·¥ä¸šæ ‡å‡†åŒ–ç»„ç»‡
+ISDNï¼ˆintegrated  services  digital  networkï¼‰ï¼š	ç»¼åˆæ•°å­—ä¸šåŠ¡ç½‘
+ISOï¼ˆinternational organization for standardizationï¼‰ï¼šå›½é™…æ ‡å‡†åŒ–ç»„ç»‡
+ISPï¼ˆInternet service providerï¼‰ï¼š	å› ç‰¹ç½‘æœåŠ¡æä¾›å•†
+
+J2EEï¼ˆJava  2 enterprise editionï¼‰ï¼š		Java 2ä¼ä¸šç‰ˆ
+J2MEï¼ˆJava  2 micro editionï¼‰ï¼š		Java 2è¢–çç‰ˆ
+J2SEï¼ˆJava  2  sdk standard editionï¼‰ï¼š			Java 2æ ‡å‡†ç‰ˆ
+JDBCï¼ˆJava database connectivityï¼‰ï¼š		Javaæ•°æ®åº“è¿æ¥
+JDKï¼ˆJava developer's Kitï¼‰ï¼š	Javaå¼€å‘å·¥å…·åŒ…
+JDOï¼ˆJava database objectï¼‰ï¼š	Javaæ•°æ®å¯¹è±¡
+JPEGï¼ˆjoint photo-graphic experts groupï¼‰ï¼š	è”åˆå›¾åƒä¸“å®¶ç»„ï¼ˆå‹ç¼©æ ‡å‡†ï¼‰ 
+JSPï¼ˆJava server pageï¼‰ï¼š	JavaæœåŠ¡å™¨é¡µé¢æŠ€æœ¯
+JVM  ï¼ˆJava virtual machineï¼‰ï¼š		Javaè™šæ‹Ÿæœº
+
+LAN  ï¼ˆlocal-area networkï¼‰ï¼š	å±€åŸŸç½‘
+
+MAC   ï¼ˆmedia access controlï¼‰ï¼š	ä»‹ è´¨ è®¿ é—® æ§ åˆ¶ 
+MAN  ï¼ˆmetropolitan-area networkï¼‰ï¼š		åŸ åŸŸ ç½‘
+MDA   ï¼ˆmodel driven architectureï¼‰ï¼š	æ¨¡å‹é©±åŠ¨æ„æ¶
+MFC    ï¼ˆMicrosoft foundation classï¼‰ï¼š		å¾®è½¯å…¬å¸VC++ç±»åº“å
+MIMD  ï¼ˆmultiple instruction multiple dataï¼‰ï¼š  å¤šæŒ‡ä»¤å¤šæ•°æ®
+MIS   ï¼ˆmanagement information systemï¼‰ï¼š   ç®¡ç†ä¿¡æ¯ç³»ç»Ÿ
+MOF   ï¼ˆmanaged object formatï¼‰ï¼š	ç®¡ç†çš„å¯¹è±¡æ ¼å¼
+MPEG   ï¼ˆmoving picture experts groupï¼‰ï¼š	è¿åŠ¨å›¾åƒä¸“å®¶ç»„ï¼ˆæ ‡å‡†ï¼‰ 
+MSDN   ï¼ˆMicrosoft developer networkï¼‰ï¼š		å¾®è½¯å¼€å‘è€…ç½‘ç»œ
+MUD   ï¼ˆmultiple user dimensionï¼‰ï¼š		å¤šäººæ–‡å­—è§’è‰²æ‰®æ¼”æ¸¸æˆ
+MVC  ï¼ˆmodel-view-controllerï¼‰ï¼š	æ–‡æ¡£-è§†å›¾-æ§åˆ¶æ¨¡å¼
+
+NFS    ï¼ˆnetwork filing systemï¼‰ï¼š		ç½‘ç»œæ–‡ä»¶ç³»ç»Ÿ
+
+OA   ï¼ˆoffice automationï¼‰ï¼š	åŠå…¬è‡ªåŠ¨åŒ–
+OCL  ï¼ˆobject constraint languageï¼‰ï¼š	å¯¹è±¡çº¦æŸè¯­è¨€
+OCR  ï¼ˆoptical character recognitionï¼‰ï¼š		å…‰å­¦å­—ç¬¦è¯†åˆ«
+ODBC  ï¼ˆopen database connectivityï¼‰ï¼š			å¼€æ”¾æ•°æ®åº“è¿æ¥
+OEM ï¼ˆoriginal equipment manufactureï¼‰ï¼š åŸå§‹è®¾å¤‡åˆ¶é€ å•†
+OLAP  ï¼ˆonline analytical processingï¼‰ï¼š	è”æœºåˆ†æå¤„ç†
+OLE ï¼ˆobject linking and embeddingï¼‰ï¼š å¯¹è±¡é“¾æ¥å’ŒåµŒå…¥
+OMG   ï¼ˆthe  object management groupï¼‰ï¼š	å¯¹è±¡ç®¡ç†ç»„ç»‡
+OMT   ï¼ˆobject modeling techniqueï¼‰ï¼š	å¯¹è±¡å»ºæ¨¡æŠ€æœ¯
+OO   ï¼ˆobject orientedï¼‰ï¼š	é¢å‘å¯¹è±¡çš„
+OOD   ï¼ˆobject oriented designï¼‰ï¼š	é¢å‘å¯¹è±¡çš„è®¾è®¡
+OOP   ï¼ˆobject oriented programmingï¼‰ï¼š	é¢å‘å¯¹è±¡çš„ç¼–ç¨‹
+ORB   ï¼ˆobject request brokerï¼‰ï¼š	å¯¹è±¡è¯·æ±‚ä»£ç†
+OSI ï¼ˆopen system interconnect reference modelï¼‰ï¼šå¼€æ”¾å¼ç³»ç»Ÿäº’è”å‚è€ƒæ¨¡å‹
+OWL   ï¼ˆobject window libraryï¼‰ï¼š	å¯¹è±¡çª—å£åº“
+
+PCI	ï¼ˆperipheral component interconnectï¼‰ï¼šå¤–éƒ¨è®¾å¤‡äº’è”
+PHP    ï¼ˆPHP hypertext preprocessorï¼‰ï¼š	PHPè¶…æ–‡æœ¬å¤„ç†å™¨ï¼ˆè¯­è¨€åï¼Œé€’å½’å®šä¹‰ï¼‰ 
+POP3 ï¼ˆpost office protocol, Version 3ï¼‰ï¼šç”µå­é‚®å±€åè®®ï¼Œç‰ˆæœ¬3
+PSP     ï¼ˆpersonal software processï¼‰ï¼š	ä¸ªä½“è½¯ä»¶è¿‡ç¨‹
+
+QA    ï¼ˆquality assuranceï¼‰ï¼š	è´¨é‡ä¿è¯
+QoS    ï¼ˆquality of serviceï¼‰ï¼š	æœåŠ¡è´¨é‡
+
+RAD   ï¼ˆrapid application developmentï¼‰ï¼š	å¿«é€Ÿåº”ç”¨ç¨‹åºå¼€å‘
+RAM  ï¼ˆrandom-access memoryï¼‰ï¼š	éšæœºå­˜å‚¨å™¨
+RAP    ï¼ˆInternet route access protocolï¼‰ï¼š	ç½‘é™…è·¯ç”±å­˜å–åè®®
+RARP ï¼ˆreverse address resolution protocolï¼‰ï¼š é€†å‘åœ°å€è§£æåè®®
+RDF ï¼ˆresource description frameworkï¼‰ï¼šèµ„æºæè¿°æ¡†æ¶
+RIP	ï¼ˆrouting information protocolï¼‰ï¼š	è·¯ç”±ä¿¡æ¯åè®®
+RISC ï¼ˆreduced instruction set computerï¼‰ï¼š ç²¾ç®€æŒ‡ä»¤é›†è®¡ç®—æœº
+RMI	ï¼ˆremote method invocationï¼‰ï¼š	è¿œç¨‹æ–¹æ³•è°ƒç”¨
+ROM  ï¼ˆread-only memoryï¼‰ï¼š	åªè¯»å­˜å‚¨å™¨
+RPC	ï¼ˆremote procedure call protocolï¼‰ï¼š	è¿œè¿‡ç¨‹è°ƒç”¨åè®®
+RPG	ï¼ˆrole play gamesï¼‰ï¼š	è§’è‰²æ‰®æ¼”æ¸¸æˆ
+RUP	ï¼ˆRational unified processï¼‰ï¼š	ç‘ç†å…¬å¸è½¯ä»¶ç»Ÿä¸€å¼€å‘è¿‡ç¨‹
+
+SCM ï¼ˆsoftware configuration managementï¼‰ï¼š  è½¯ä»¶é…ç½®ç®¡ç†
+SDK	ï¼ˆsoftware development Kitï¼‰ï¼š		è½¯ä»¶å¼€å‘å·¥å…·åŒ…
+SMP	ï¼ˆsymmetric multi processingï¼‰ï¼š	å¯¹ç§°å¤šå¤„ç†ç³»ç»Ÿ
+SMTP  ï¼ˆsimple mail transfer protocolï¼‰ï¼š		ç®€å•é‚®ä»¶ä¼ è¾“åè®®
+SNMP ï¼ˆsimple network management protocolï¼‰ï¼š ç®€å•ç½‘ç»œç®¡ç†åè®®
+SOAP ï¼ˆsimple object access protocolï¼‰ï¼š ç®€å•å¯¹è±¡è®¿é—®åè®®
+SQL		ï¼ˆstructured query languageï¼‰ï¼š		ç»“æ„åŒ–æŸ¥è¯¢è¯­è¨€
+STL	ï¼ˆstandard template libraryï¼‰ï¼š	æ ‡å‡†æ¨¡æ¿åº“
+
+TCP	ï¼ˆtransmission control protocolï¼‰ï¼š	ä¼ è¾“æ§åˆ¶åè®®
+TSP	ï¼ˆteam software processï¼‰ï¼š	å›¢é˜Ÿè½¯ä»¶è¿‡ç¨‹
+
+UDDI ï¼ˆuniversal description, discovery and integrationï¼‰ï¼šç»Ÿä¸€æè¿°ã€å‘ç°å’Œé›†æˆåè®®
+UDP	ï¼ˆuser datagram protocolï¼‰ï¼š	ç”¨æˆ·æ•°æ®æŠ¥åè®®
+UI	ï¼ˆuser interfaceï¼‰ï¼š	ç”¨æˆ·ç•Œé¢
+UML    ï¼ˆthe unified modeling languageï¼‰ï¼š	ç»Ÿä¸€å»ºæ¨¡è¯­è¨€
+UP	ï¼ˆunified processï¼‰ï¼š	ç»Ÿä¸€è½¯ä»¶å¼€å‘è¿‡ç¨‹
+URL	ï¼ˆuniform resource locatorsï¼‰ï¼š	é€šç”¨èµ„æºå®šä½ç¬¦æ ‡å‡†
+USB	ï¼ˆuniversal serial busï¼‰ï¼š	é€šç”¨ä¸²è¡Œæ€»çº¿
+
+VAS	ï¼ˆvalue-added serveï¼‰ï¼š	å¢å€¼æœåŠ¡
+VCD		ï¼ˆvideo compact discï¼‰ï¼š		è§†é¢‘å…‰ç›˜
+VCL	ï¼ˆvisual component libraryï¼‰ï¼š å¯è§†åŒ–æ„ä»¶åº“
+VGA    ï¼ˆvideo graphics adapterï¼‰ï¼š	è§†é¢‘å›¾å½¢é€‚é…å™¨
+VLAN  ï¼ˆvirtual local-area networkï¼‰ï¼š		è™šæ‹Ÿå±€åŸŸç½‘
+VOD    ï¼ˆvideo on demandï¼‰ï¼š	è§†é¢‘ç‚¹æ’­ç³»ç»Ÿ
+VPN	ï¼ˆvirtual private networkï¼‰ï¼š	è™šæ‹Ÿä¸“ç”¨ç½‘ç»œ
+VRML ï¼ˆvirtual reality modeling languageï¼‰ï¼š è™šæ‹Ÿç°å®å»ºæ¨¡è¯­è¨€
+
+W3C    ï¼ˆworld wide web consortiumï¼‰ï¼š	ä¸‡ç»´ç½‘è”ç›Ÿ
+WAN    ï¼ˆwide-area networkï¼‰ï¼š	å¹¿åŸŸç½‘
+WAP    ï¼ˆwireless application protocolï¼‰ï¼š		æ— çº¿åº”ç”¨åè®®
+WCDMAï¼ˆwideband code division multiple accessï¼‰ï¼šå¤šé¢‘ç åˆ†å¤šå€æŠ€æœ¯
+WLAN   ï¼ˆwireless local-area networkï¼‰ï¼š	æ— çº¿å±€åŸŸç½‘
+WSDL ï¼ˆweb service description languageï¼‰ï¼šWebæœåŠ¡æè¿°è¯­è¨€
+WWW   ï¼ˆworld wide webï¼‰ï¼š	ä¸‡ç»´ç½‘
+
+XAML ï¼ˆextensible application markup languageï¼‰ï¼šå¯æ‰©å±•åº”ç”¨ç¨‹åºæ ‡è®°è¯­è¨€
+XML    ï¼ˆextensible markup languageï¼‰ï¼š	å¯æ‰©å±•æ ‡è®°è¯­è¨€
+XP	ï¼ˆextreme programmingï¼‰ï¼š	æé™ç¼–ç¨‹
+
+*/
+
+/* é˜…è¯»ç´ æ
+
+ï¼ˆ1ï¼‰Unix was originally developed at Bell Laboratories as a reaction to the large, complex, 
 non-portable operating systems of the early 1970s. AT&T did not see a significant opportunity 
 in licensing or supporting an operating system; Instead, it provided Unix source code for a 
 nominal license fee and small per-unit royalties. A number of academic efforts sprang up to 
@@ -700,28 +700,28 @@ of Unix to start with, and then added various proprietary features. Although all
 operating systems claimed to be Unix, software written on one version was often not portable 
 to the other versions.
 
-£¨2£©Many believed this effort by AT&T was bad news for the software community.
+ï¼ˆ2ï¼‰Many believed this effort by AT&T was bad news for the software community.
 Among them was Richard Stallman, a programmer at MIT, who in 1984 founded the GNU Project 
-£¨"GNU is Not Unix"£© as an effort to rewrite Unix as "free" software-that is, software not
+ï¼ˆ"GNU is Not Unix"ï¼‰ as an effort to rewrite Unix as "free" software-that is, software not
 controlled by any one person and available for anybody to use and modify as desired. This 
-led to the creation in 1985 of  the Free Software Foundation £¨FSF£©£¬ the main funding and 
+led to the creation in 1985 of  the Free Software Foundation ï¼ˆFSFï¼‰ï¼Œ the main funding and 
 advocacy organization for the GNU Project.The Free Software Foundation established the GNU 
-General Public License £¨GPL£©£¬ the most important open source license in use today. While 
+General Public License ï¼ˆGPLï¼‰ï¼Œ the most important open source license in use today. While 
 the GNU Project was getting started, other efforts began to at least standardize the 
 definition of Unix to enhance software portability. One such effort was the formation of the 
 IEEE 1003 standards committee, which would go on to produce the set of standards known as 
-the Portable Operating System Interface£¨POSIX£© ¡£ Another effort of note was the creation 
+the Portable Operating System Interfaceï¼ˆPOSIXï¼‰ ã€‚ Another effort of note was the creation 
 of the X/Open organization, a commercial venture oriented toward application portability, 
 testing, and branding of Unix- compatible operating systems.
 
-£¨3£©The concept of a storage device has changed dramatically from the first magnetic disk 
+ï¼ˆ3ï¼‰The concept of a storage device has changed dramatically from the first magnetic disk 
 drive introduced by the IBM RAMAC in  1956  to today's server  rooms with detached and fully 
 networked storage servers. Storage has expanded in both large and small directions-up to 
 multi-terabyte server appliances and down to multi-gigabyte MP3 players that fit in a pocket. 
 All use the same underlying technology-the rotating magnetic disk drive-but they quickly 
 diverge from there.
 
-£¨4£©SAN relies on each server connecting to it to provide security and management of the 
+ï¼ˆ4ï¼‰SAN relies on each server connecting to it to provide security and management of the 
 portion of the storage pool assigned to it. Only recently are techniques being  introduced 
 that allow storage pools to be shared among servers, but this is usually only when the host 
 servers are tightly clustered. The key is that the traditional SAN system is trying to present 
@@ -731,14 +731,14 @@ and generally achieves better performance than direct- attached disks as a resul
 caches and buffering. In fact, early SANs had SCSI connections to the hosts, as well as to 
 the back-end disks.
 
-£¨5£©The overwhelming majority of information in an enterprise is unstructured-that is, it 
+ï¼ˆ5ï¼‰The overwhelming majority of information in an enterprise is unstructured-that is, it 
 is not resident in relational databases that tabulate the data and transactions occurring
 throughout the enterprise. This unstructured information exists in the form of HTML pages, 
-documents in proprietary formats, and forms £¨e.g., paper and media objects£©¡£ Together with 
+documents in proprietary formats, and forms ï¼ˆe.g., paper and media objectsï¼‰ã€‚ Together with 
 information in relational and proprietary databases, these documents constitute the enterprise 
 information ecosystem.
 
-£¨6£©It is well known that some of the most valuable knowledge in an enterprise  resides in 
+ï¼ˆ6ï¼‰It is well known that some of the most valuable knowledge in an enterprise  resides in 
 the minds of its employees. Enterprises must combine digital information with the knowledge 
 and experience of employees. An important distinction between the enterprise and the Internet 
 is that while Internet users are anonymous for the most part, enterprise users are answerable 
@@ -746,19 +746,19 @@ and guided by specific controllable processes. Privacy issues are also very diff
 enterprise, since people are usually engaged in enterprise-specific behavior and are being 
 compensated for their engagement.
 
-£¨7£©In past decades, "Moore's law" has governed the revolution in microelectronics.
+ï¼ˆ7ï¼‰In past decades, "Moore's law" has governed the revolution in microelectronics.
 Through continuous advancements in device and fabrication technology, the industry has 
 maintained exponential progress rates in transistor miniaturization  and  integration  density.
 As a result, microchips have become cheaper, faster, more complex,  and  more  power efficient.
 
-£¨8£©Much of the performance gain in digital hardware can be traced to corresponding advances 
+ï¼ˆ8ï¼‰Much of the performance gain in digital hardware can be traced to corresponding advances 
 in integrated circuit technology. For example, over the past 30 years we have witnessed a 
 steady decrease in transistor channel length by two orders of magnitude from 10?m in 1970 to 
 less than 0.1?m today. While this reduction of feature size benefits analog and digital 
 circuits alike, overall analog circuit performance is compromised by other trends such as 
 reduced supply voltages.
 
-£¨9£©This is the new world order: software development on a global scale. As is almost always 
+ï¼ˆ9ï¼‰This is the new world order: software development on a global scale. As is almost always 
 the case, this doesn't mean the entire technical arm of a corporation breaking off and 
 floating across an ocean in one clean clump, but rather numerous small teams here and there 
 "sharing the pain" across time zones. Nowadays it's not atypical to have multiple teams on
@@ -768,7 +768,7 @@ projects means they're just too big for one group to handle on its own.And wheth
 spread across a campus or across multiple continents, distributed development affects the 
 way that we write code.
 
-£¨10£©Individuals from different cultures are also likely to be motivated differently. In 
+ï¼ˆ10ï¼‰Individuals from different cultures are also likely to be motivated differently. In 
 countries where individualism is valued, people seek material gain and personal recognition.
 Countries that emphasize the collective rather than the individual tend to value time for 
 personal relations, family, and so forth, over material gain. For them the goal is to  
@@ -776,7 +776,7 @@ preserve social equilibrium, not to "rock the boat." And,  for  them  the  great
 punishment  is ostracism. Team incentive systems should take these values into account, 
 rewarding U.S. developers with money and French developers with time off.
 
-£¨11£©Systems such as Lotus Notes IM allow people to contribute to discussions remotely 
+ï¼ˆ11ï¼‰Systems such as Lotus Notes IM allow people to contribute to discussions remotely 
 either synchronously or asynchronously. In cultures where meetings are the venues for 
 confirming, rather than making, a decision, the actual content of the discussion is not 
 visible to everyone concerned. In contrast, online databases show all the discussion, 
@@ -785,37 +785,37 @@ than relationship-based in their underlying structure. It is easy to see that th
 of technology will be less favored by cultures that value "face" and relationships over 
 task orientation.
 
-£¨12£©People are not well represented in today's software. With the exception of IM
-£¨instant messaging£© clients, today's applications offer few clues that people are actually
+ï¼ˆ12ï¼‰People are not well represented in today's software. With the exception of IM
+ï¼ˆinstant messagingï¼‰ clients, today's applications offer few clues that people are actually
 living beings. Static strings depict things associated with people like e-mail addresses,
 phone numbers, and home-page URLs. Applications also tend to show the same information about
 a person, no matter who is viewing it. This information does not change, at least not very 
 rapidly. If your only exposure to people were through these strings, you would have little
 reason to believe that people actually move about in physical and virtual space and do things.
 
-£¨13£©It has been more than ten years since such "information appliances" as ATMs and grocery 
+ï¼ˆ13ï¼‰It has been more than ten years since such "information appliances" as ATMs and grocery 
 store UPC checkout counters were introduced. For the office environment, Mark Weiser began to
-articulate the notion of UbiComp £¨ubiquitous computing£© and identified some of the salient
+articulate the notion of UbiComp ï¼ˆubiquitous computingï¼‰ and identified some of the salient
 features of the trends in 1991. Embedded computation is also becoming widespread.
 
-£¨14£©Microprocessors, for example, are finding themselves embedded into seemingly 
+ï¼ˆ14ï¼‰Microprocessors, for example, are finding themselves embedded into seemingly 
 conventional pens that remember what they have written. Anti-lock brake systems in cars are
 controlled by fuzzy logic. And as a result of wireless computing, miniaturization, and new
-economies of scale, such technologies as PDAs £¨personal digital assistants£©£¬ IM
-£¨instant messaging£©£¬ and mobile access to the Internet are almost taken for granted.
+economies of scale, such technologies as PDAs ï¼ˆpersonal digital assistantsï¼‰ï¼Œ IM
+ï¼ˆinstant messagingï¼‰ï¼Œ and mobile access to the Internet are almost taken for granted.
 
-£¨15£©Ubiquitous computing is in some ways an everyday reality. However, cooperative 
+ï¼ˆ15ï¼‰Ubiquitous computing is in some ways an everyday reality. However, cooperative 
 ubiquitous computing is still in its infancy. New forms of interaction must be developed
 for this environment-interaction between two or more parties: people and people 
-£¨both technologically mediated and not£©£¬ people and machines, and machines and machines.
+ï¼ˆboth technologically mediated and notï¼‰ï¼Œ people and machines, and machines and machines.
 Implicit in this formulation is the importance of location. Previously, transactions took
 place where the computer was anchored. The location of the computer was not a design issue.
-Now distance £¨both physical and social£© and location are key considerations in 
+Now distance ï¼ˆboth physical and socialï¼‰ and location are key considerations in 
 understanding and designing systems.
 
-£¨16£©Containers, or wireless mobile devices, primarily serve as a mechanism for easily 
+ï¼ˆ16ï¼‰Containers, or wireless mobile devices, primarily serve as a mechanism for easily 
 transporting data identifiers among terminals. Sample containers include PDAs, cell phones,
-bar-code readers, and Smart  Cards  £¨see  figure  3£© ¡£  Some  devices  can  be  both  a
+bar-code readers, and Smart  Cards  ï¼ˆsee  figure  3ï¼‰ ã€‚  Some  devices  can  be  both  a
 container and a terminal. These types of devices not only  hold  and  transport  an  identifier,
 they can also allow some interaction with the associated data. For  example,  a  PDA 
 transporting an image identifier can also display and allow for machine manipulation of a 
@@ -823,7 +823,7 @@ version of the image itself.  A container can  also work  in  concert  with  a  
 serving  as an extension of the terminal's user interface. This is particularly useful when 
 working with terminals that have limited input functionality.
 
-£¨17£©The hemispherical display surface provides the viewer with a greater sense of immersion 
+ï¼ˆ17ï¼‰The hemispherical display surface provides the viewer with a greater sense of immersion 
 than a typical flat-screen display. When viewing designs for the interior of cars, for example,
 this enhanced sense of immersion provides a better idea of what it would be like to actually 
 sit inside the car. Furthermore, since this immersion is facilitated without encumbering
@@ -835,32 +835,32 @@ display to get maximum immersion. To counteract these factors, we provide an aux
 touch-screen display, mounted at waist height in front of the terminal, to serve as an 
 interaction portal.
 
-£¨18£©To some degree, data access methods have been rooted in the metaphor of accessing files
+ï¼ˆ18ï¼‰To some degree, data access methods have been rooted in the metaphor of accessing files
 in a hierarchical filesystem. Technological developments such as wireless networks, mobile
 computing devices, and specialized display terminals can be used to present a different, 
 and possibly more effective, user model for data access in a modern cooperative ubiquitous 
 computing environment. We have proposed a user model called "sentient data access," which 
 utilizes access context, location, and user information.
 
-£¨19£©In October of 2002, Sun introduced the Sun ONE Application Server version 7.0.This key 
+ï¼ˆ19ï¼‰In October of 2002, Sun introduced the Sun ONE Application Server version 7.0.This key 
 ingredient of the Sun ONE platform is tightly integrated with the new Sun ONE Studio for 
 Java 2 Enterprise Edition 4.1 set of web services tools. Sun also introduced a new business
-model that offers the core version £¨Platform Edition£© free to enterprises and independent
-software vendors £¨ISVs£© on all leading platforms. With its new modular architecture, the
-application server increases options, as well as return on investment£¨ROI£©£¬ in rapidly 
+model that offers the core version ï¼ˆPlatform Editionï¼‰ free to enterprises and independent
+software vendors ï¼ˆISVsï¼‰ on all leading platforms. With its new modular architecture, the
+application server increases options, as well as return on investmentï¼ˆROIï¼‰ï¼Œ in rapidly 
 building and deploying Sun ONE Java web services.
 
-£¨20£©In addition to all the aforementioned strengths of J2EE, one of the key markets of
+ï¼ˆ20ï¼‰In addition to all the aforementioned strengths of J2EE, one of the key markets of
 tomorrow is the Wireless market, where Java technology-enabled devices from handset 
 manufacturers such as Nokia, Ericsson, Motorola, Sharp among others, are being deployed
 by key carriers such as Nextel, NTT Docomo and LG Telecom. More deployments and handset 
 models will be unveiled shortly. This market is so huge that there are about 1 billion Java
 enabled handsets to be available in the next 2 or 3 years, and these devices#151;mobile phones,
 pagers, PDAs, automotive systems are all joining the traditional client, the personal computer,
-on the Net. They represent new platforms¨Calways on, always with you¨Cthat are opening up 
+on the Net. They represent new platformsâ€“always on, always with youâ€“that are opening up 
 exciting new opportunities for networked applications and services.
 
-£¨21£©If data is placed into the memory cache before being written permanently to the 
+ï¼ˆ21ï¼‰If data is placed into the memory cache before being written permanently to the 
 disk drives, then this  memory  must  be  protected  to  keep  the  data  safe  and  
 recoverable after a power failure or other catastrophic error. Doing so allows the storage
 device to acknowledge a user write request as soon as the  data  enters the  cache,  rather 
