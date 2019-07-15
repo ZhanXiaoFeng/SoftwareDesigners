@@ -361,7 +361,8 @@ Reflection					反射
 Register					注册
 Regular expression			正则表达式
 Relational algebra			关系代数
-Relational databases model	关系数据库模型                                                               Release	发布
+Relational databases model	关系数据库模型                                                               
+Release						发布
 Remote						远程的
 Repeater					中继器
 Replication					复制
