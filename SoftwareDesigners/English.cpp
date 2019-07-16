@@ -119,6 +119,22 @@ constitute(构成) the enterprise information ecosystem(生态系统).
 这些文档与关系数据库和专有数据库中的信息一起构成了企业信息生态系统。
 
 
+（6）
+It is well known that some of the most valuable knowledge in an enterprise resides(存在) in 
+the minds of its employees. 
+
+Enterprises must combine digital information with the knowledge and experience of employees. 
+
+An important distinction between the enterprise and the Internet 
+is that while Internet users are anonymous for the most part, enterprise users are answerable 
+and guided by specific controllable processes. 
+
+Privacy issues are also very different in an enterprise, since people are usually engaged 
+in enterprise-specific behavior and are being compensated for their engagement.
+
+
+
+
 
 */
 
