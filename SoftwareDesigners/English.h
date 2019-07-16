@@ -1,9 +1,18 @@
 #pragma once
 
 //有些翻译有问题 发现了就改过来
+//添加一些场景词
 
 
 /* 常见计算机词汇
+
+exabyte  (EB)
+petabyte (PB)
+terabyte (TB)
+gigabyte (GB)
+megabyte (MB)
+kilobyte (KB)
+byte      (B)
 
 Abstract					抽象的
 Abstraction					抽象
