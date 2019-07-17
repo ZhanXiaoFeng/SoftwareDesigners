@@ -120,21 +120,33 @@ constitute(构成) the enterprise information ecosystem(生态系统).
 
 
 （6）
-It is well known that some of the most valuable knowledge in an enterprise resides(存在) in 
-the minds of its employees. 
+It is well known that some of the most valuable(贵重的) knowledge in an enterprise resides(存在) in 
+the minds of its employees(员工). 
+众所周知，企业中一些最有价值的知识存在于其员工的心中。
 
-Enterprises must combine digital information with the knowledge and experience of employees. 
+Enterprises must combine(联合) digital(数字) information with the knowledge and experience of employees. 
+企业必须将数字信息与员工的知识和经验相结合。
 
-An important distinction between the enterprise and the Internet 
-is that while Internet users are anonymous for the most part, enterprise users are answerable 
-and guided by specific controllable processes. 
+An important distinction(特性) between the enterprise and the Internet is that while Internet users are 
+anonymous(匿名) for the most part, enterprise users are answerable(负责) and guided(指导) by specific 
+controllable processes. 
+企业和互联网之间的一个重要区别是，尽管互联网用户在很大程度上是匿名的，但企业用户对特定的可控流程负有责任和指导。
 
-Privacy issues are also very different in an enterprise, since people are usually engaged 
-in enterprise-specific behavior and are being compensated for their engagement.
+Privacy issues are also very different in an enterprise, since(因为) people are usually engaged in(从事于) 
+enterprise-specific behavior(行为) and are being compensated(补偿) for their engagement(承诺).
+隐私问题在企业中也是非常不同的，因为人们通常从事特定于企业的行为并且正在为其参与做出补偿。
 
 
+（7）In past decades(几十年), "Moore's law"(摩尔定律) has governed(领导) the revolution(革命) in microelectronics(微电子学).
+再过去的几十年里，摩尔定律领导了微电子学的革命。
 
+Through continuous(不断的) advancements(进步) in device and fabrication technology(制造工艺), the industry(行业) has
+maintained(维持) exponential(指数级) progress(进步) rates(比率) in transistor(晶体管) miniaturization(小型化)  and 
+integration(集成)  density(密度).
+通过器件和制造技术的不断进步，该行业在晶体管小型化和集成密度方面保持了指数级的进步。
 
+As a result, microchips(微芯片) have become cheaper, faster, more complex,  and  more  power efficient(效率).
+结果，微芯片变得更便宜，更快速，更复杂并且高效。
 
 */
 
