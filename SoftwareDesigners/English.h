@@ -1,6 +1,6 @@
 #pragma once
 
-//有些翻译有问题 发现了就改过来
+//有些翻译有问题 发现了就改过来 遇到常用的做个记号(*)
 //添加一些场景词
 
 
@@ -24,14 +24,16 @@ Active object				主动对象
 Activity diagram			活动图
 Actor						参与者
 Actuator					传动器
-Adapter						适配器
+Adapter						适配器 					(*)
 Addressing					寻址
+Affinity 					关联 					(*)
 Agent						代理
 Aggregation					聚合
 Agile Methodologies			敏捷方法学
 Algebra						代数学
-Algorithm					算法
+Algorithm					算法						(*)
 Allocation					分配
+allocator					分配器					(*)
 Alphabet					字母表
 Alphabetize					按字母顺序
 Amplify						放大
@@ -43,21 +45,24 @@ Aspect oriented				面向方面的
 Assembler					汇编程序
 Assertion					断言
 Assessment					评估
+associative 				关联 					(*)
 Association rule			关联规则
 Association					关联
 Assumption					假设
 Asymmetric key encryption	非对称密钥加密
-Atomicity					原子性
+Atomicity					原子性 					(*)
 Attack tree					攻击树
 Attribute					特性
 Authentication				认证
 Automation					自动控制化
+avoid 						避免 					(*)
 
 Backdoor					后门
 Backup						备份
 Barrier						隔离层、隔离物
 Baseline					基线
 Batch						批
+behavior 					习惯 					(*)
 Binary						二进制
 Black box testing			黑盒测试
 Bluetooth					蓝牙技术
@@ -77,6 +82,8 @@ Calculator					计算器
 Call back					回调
 Catalog						目录
 Category					范畴
+capacity 					容量 					(*)
+certain 					特定的 					(*)
 Certification				认证
 Channel						信道
 Class diagram				类图
@@ -88,15 +95,19 @@ Collaboration				协作
 Combinatory Mathematics		组合数学
 Commerce					商务
 Commit						提交
+common 						常用的 					(*)
 Compact						紧凑的
+compatible 					兼容的 					(*)
 Compatibility				兼容性
+comparator(s)				运算符 					(*)
 Compile						编译
-Compiler					编译器
+Compiler					编译器					(*)
 Component					组件
 Composite					复合
 Computation					计算
+Concept 					概念 					(*)
 Conceptual design			概念设计
-Concurrent					并发的
+Concurrent					并发的 					(*)
 Confidential				机密的
 Configuration				配置
 Congestion					拥挤、阻塞
@@ -105,12 +116,15 @@ Connector					连接件
 Consistency					一致性
 Console						控制台
 Constrain					约束
-Container					容器
+Container(s)				容器 					(*)
 Context						上下文
+contiguously 				连续的 					(*)
+convenience 				方便的 					(*)
 Coordinate					坐标
 Copyright					著作权
 Counter						计数器
 Coupling					耦合
+corresponding 				对应的 					(*)
 Cracker						骇客
 Critical path				关键路径
 Critical section			临界区
@@ -120,9 +134,11 @@ Crystal						水晶、水晶方法
 Data mining					数据挖掘
 Data warehouse				数据仓库
 Datagram					数据报
+dangling 					悬空的 					(*)
 Debug						调试
 Decision theory				决策理论
 Decision tree				决策树
+declaration 				声明						(*)
 Decompile					反编译
 Decryption					解密
 Definition					定义
@@ -136,7 +152,12 @@ Derive						派生
 Descriptor					描述符\描述器
 Design by contract			契约式设计
 Design pattern				设计模式
-Diagnostics					诊断
+destructor 					破坏者 					(*)
+Detailed					详细的
+detection 					检测 					(*)
+detection idiom 			检测手法 				(*)
+determine 					决定 					(*)
+Diagnostics					诊断						(*)
 Digital certificate			数字证书
 Digital signature			数字签名
 Disassemble					反汇编
@@ -160,21 +181,25 @@ Emulation					仿真
 Encapsulation				封装
 Encryption					加密
 Engine						引擎
+environment 				环境	 					(*)
 Entity						实体
 Ethernet					以太网
 Euclidean space				欧氏空间
 Even						偶数、偶校验
 Evolutionary				进化的
-Exception					异常
+Exception(s)				异常						(*)
 Executable					可执行的
-Extension					扩展
+Extension					扩展 					(*)
 Extract						提取
 Extranet					外联网
+expression 					表达式					(*)
 
 Facsimile					传真
+failure 					故障，失败 				(*)
 Fault tree					错误树
 Fault-tolerant				容错
 Feasibility					可行性
+Feature test macros			功能特性测试宏			(*)
 Feedback					反馈
 Field						字段
 Filter						过滤
@@ -186,9 +211,11 @@ Format						格式、格式化
 Framework					框架
 Frame						帧
 Frequency					频率
+freestanding 				独立的					(*)
 Function overloading		函数重载
 Function					功能、函数
 Functional testing			功能测试
+fundamentals 				基本 					(*)
 Fuzzy						模糊的
 
 Game theory					对策论
@@ -211,7 +238,7 @@ Handwriting recognition		手写识别
 Harness						约束
 Hashtable					哈希表
 Heap						堆
-Hierarchical				层次的、体系的
+Hierarchical				层次的、体系的 			(*)
 High availability			高可用性
 Hook						钩子
 Human factors engineering	人因工程
@@ -223,13 +250,14 @@ Hypothetical				假定的
 Icon						图标
 Identifier					标识符
 Imagebase					基地址
+implementation				实现						(*)
 Increment					增量
 Incremental integration	testing 组合测试
 Infer						推理
 Information hiding			信息隐藏
 Infrastructure				下部构造、基础的下部组织
-Inheritance					继承
-Initialize					初始化
+Inheritance					继承 					(*)
+Initialize					初始化					(*)
 Install						安装
 Instance					实例
 Instruction					指令
@@ -247,7 +275,7 @@ Invoke						调用
 Isolation					孤立性
 Isomorphic					同构的
 Iterative					迭代
-Iterator					迭代器
+Iterator					迭代器 					(*)
 	
 Join point					连接点
 
@@ -270,11 +298,14 @@ Macro						宏
 Magnetic					磁性的
 Maintenance					维护
 Managed execution			托管执行
+mandatory 					强制的，托管的 			(*)
 Manual						手册
+manipulate 					操纵 					(*)
+manipulators				操纵符 					(*)
 Mapping						映射规则
 Marshalling					编组、封送
 Matrix						矩阵
-Mechanism					机制
+Mechanism					机制，原理 				(*)
 Mentor						导师
 Merge						归并
 Method						方法
@@ -288,29 +319,37 @@ Module coupling				模块耦合
 Module						模块、组件
 Monitor						监视器
 Motherboard					主板
+multi 						多 						(*)
 Multiprogramming			多道程序设计
 Multithreading				多线程
 Mutation					变异
 
 Namespace					名字空间
+Named requirements 			具名要求 				(*)
 Natural language			自然语言
 Navigation					定位、航行
 Neural network				神经网络
 Novice						初学者
 Number theory				数论
+
+numerics 					数值 					(*)
 Numerical computation		数值计算
+notification loops 			消息循环 				(*)
 
 Open source					开放源代码
 Operator					操作符
 Optical fiber				光纤
 Optical						视力的、光学的
 Optimization				优化
+optionally type				可选输入					(*)
 Orthogonal					正交
+organize 					组织 					(*)
 Outsourcing					外包
 Over-engineering			过度设计
 Overflow					溢出
 Overload					重载
 Override					覆盖
+ownership 					所有权					(*)
 
 Package						包
 Pair programming			结对编程
@@ -339,7 +378,7 @@ Port						端口
 Portability					可移植性
 Portal						门户
 Prepositional logic			命题逻辑
-Preprocessor				预处理程
+Preprocessor				预处理器					(*)
 Primary key					主键
 Priority					优先权
 Probability theory			概率论
@@ -355,27 +394,33 @@ Prototyping development	approach 型化开发方法
 Proxy						代理
 Pruning node				修剪结点
 Pseudocode					伪代码
+pseudo-random 				伪随机数 				(*)
 
 Quota						定额
 
+ranges 						范围 					(*)
 Reactor						反应器
 Real-time					实时的
 Recovery testing			恢复测试
 Redundancy					冗余
 Refabricate					重构
-Reference type				应用类型
-Reference					引用
+Reference type				引用类型
+Reference					引用，参考				(*)
 Referential integrity		参照完整性
 Reflection					反射
+regardless 					不管，不考虑 				(*)
 Register					注册
 Regular expression			正则表达式
+relational comparators 		关系运算符				(*)
 Relational algebra			关系代数
-Relational databases model	关系数据库模型                                                               
+Relational databases model	关系数据库模型 
 Release						发布
 Remote						远程的
 Repeater					中继器
 Replication					复制
 Repository					数据仓库、仓库
+requirement(s) 				要求						(*)
+reserve 					储存  					(*)
 Resident					常驻的
 Resolution					分辨率、决定的
 Responsiveness				响应
@@ -389,6 +434,7 @@ Router						路由器
 
 Sandbox						砂箱
 Satellite					人造卫星
+satisfy 	 				满意的 					(*)
 Scan						扫描
 Scheduling					调度
 Schema						模式、结构、方案
@@ -401,6 +447,7 @@ Segment						段
 Semantic					语义的
 Semiconductor				半导体
 Sensor						传感器
+sequence 					顺序，序列				(**)
 Sequential					顺序的
 Serial						串行的
 Serialize					串行化
@@ -420,6 +467,7 @@ Sockets layer				套接层
 Software reuse				软件复用
 Solution					解决方案
 Sophisticated				高级的、复杂的
+specifications 				规范、说明书 				(*)
 Speech recognition			语音识别
 Speech synthesis ?			语音合成
 Spiral model				螺旋模型
@@ -433,20 +481,26 @@ Strategy					策略
 Stream						流
 Stress testing				压力测试
 String						串
+strongly recommend 			强烈建议					(*)
 Stub						存根
 Subject						主体
 Subnet						子网
 Substantial					实质的
 Supercomputer				超级计算机
+Support 					支持						(*)
 Symbol						符号
+synchronized 				同步的 					(*)
 Synchronize					使同步
 Syntactic					语法的
 System analyst				系统分析员
 System testing				系统测试
 
-Template					模板
+Template					模板						(*)
+temporarily 				临时地 					(*)
+technical 					技术						(*)
 Terminal					终端
 Terminology					术语
+terminated 					结束，结尾				(*)
 Tertiary					第三方的
 Test case					测试用例
 Test  Driven  development	测试驱动开发
@@ -459,21 +513,26 @@ Token						令牌
 Top-down programming		自顶向下程序设计
 Topology					拓扑（结构）
 Tow-way						双向的
-Track						追踪
-Transaction					事务
+Track						追踪 					(*)
+Transaction					事务 					(*)
 Transformation				转换
+traits 						特性						(*)
 Transistor					晶体管
 Trigger						触发器
+Trivial 					不重要的 				(*)
 Tuple space					元组空间
 
+unordered 					无序的 					(*)
 Unicode						国际双字节编码
 Uninstall					卸载
 Unit testing				单元测试
+uniform 					统一 					(*)
 Unmarshalling				反编组、拆收
 Upward  compatible			向上兼容的
 Use case					用例
 User identity				用户身份认证
 Utility						效用、工具
+utility functions			工具函数 				(*)
 
 Vacuum tube					真空管
 Value chain					价值链
@@ -481,6 +540,7 @@ Variable-length array		可变长数组
 Variance					变动、协变
 Vector						矢量
 Velocity					速率
+via 						通过 					(*)
 Vibration					震荡
 View						视图
 Violation					冲突
