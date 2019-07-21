@@ -192,6 +192,16 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="SortAndSearch.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\堆.png" />
+    <Image Include="..\排序.png" />
+    <Image Include="..\数据结构.png" />
+    <Image Include="..\网络模型、协议.png" />
+    <Image Include="..\软件设计师教程（第5版）.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\软考中级-软件设计师.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
