@@ -5,16 +5,6 @@
 
 using namespace std;
 
-Algorithm::Algorithm()
-{
-
-}
-
-
-
-
-//////////////////////////////////////////////////////////////////////////
-
 SortAndSearch::SortAndSearch()
 {
 	std::default_random_engine e;
