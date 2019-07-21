@@ -8,7 +8,7 @@
 ---
 
 参考书：软件设计师教程（第5版）
-![](https://github.com/zxffffffff/SoftwareDesigners/blob/master/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B%20%E7%AC%AC5%E7%89%88.jpg)
+![](https://github.com/zxffffffff/SoftwareDesigners/blob/master/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B%EF%BC%88%E7%AC%AC5%E7%89%88%EF%BC%89.jpg)
 
 ---
 
