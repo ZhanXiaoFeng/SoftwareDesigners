@@ -6,6 +6,10 @@
 提取码：58fe 
 
 ---
+参考书：软件设计师教程（第5版）
+本书作为中级职称的全国计算机技术与软件专业技术资格（水平）考试（简称“软考”）指定教材，具有比较权威的指导意义。
+![](https://github.com/zxffffffff/SoftwareDesigners/blob/master/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B%20%E7%AC%AC5%E7%89%88.jpg)
+---
 
 ### 1.计算机系统知识
 - TODO
