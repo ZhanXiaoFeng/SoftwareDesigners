@@ -347,3 +347,6 @@ healthchecksdb
 
 # Backup folder for Package Reference Convert tool in Visual Studio 2017
 MigrationBackup/
+Debug/SoftwareDesigners.exe
+SoftwareDesigners/Debug/SoftwareDesigners.vcxproj.FileListAbsolute.txt
+x64/Debug/SoftwareDesigners.exe
