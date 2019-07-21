@@ -124,13 +124,9 @@
 
 ---
 
-### 算法 (Algorithm.h)
-五大常用算法：
-- 动态规划算法（Dynamic Programming Algorithm）
-- 分治算法（Divide and Conquer）
-- 回溯算法（backtracking algorithm）
-- 贪心算法（greedy algorithm）
-- 分支限界算法（Branch and Bound Method）
+### 排序和查找 (SortAndSearch.h)
+- 四大查找
+- 十大经典排序
 
 ### 设计模式 (DesignPattern.h)
 设计模式的六大原则:
