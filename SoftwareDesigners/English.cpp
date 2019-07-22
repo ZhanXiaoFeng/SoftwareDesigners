@@ -137,7 +137,8 @@ enterprise-specific behavior(行为) and are being compensated(补偿) for their
 隐私问题在企业中也是非常不同的，因为人们通常从事特定于企业的行为并且正在为其参与做出补偿。
 
 
-（7）In past decades(几十年), "Moore's law"(摩尔定律) has governed(领导) the revolution(革命) in microelectronics(微电子学).
+（7）
+In past decades(几十年), "Moore's law"(摩尔定律) has governed(领导) the revolution(革命) in microelectronics(微电子学).
 再过去的几十年里，摩尔定律领导了微电子学的革命。
 
 Through continuous(不断的) advancements(进步) in device and fabrication technology(制造工艺), the industry(行业) has
@@ -147,6 +148,21 @@ integration(集成)  density(密度).
 
 As a result, microchips(微芯片) have become cheaper, faster, more complex,  and  more  power efficient(效率).
 结果，微芯片变得更便宜，更快速，更复杂并且高效。
+
+
+（8）
+Much of the performance gain(性能提高) in digital hardware can be traced(追溯) to corresponding(相应的) advances(进步) 
+in integrated circuit technology(集成电路技术). 
+大部分性能提升 数字硬件的 可以追溯到相应进步 集成电路技术的。
+
+For example, over the past 30 years we have witnessed(目睹) a steady(稳定) decrease(减少) in transistor channel length
+by two orders of magnitude(数量级) from 10?m in 1970 to less than 0.1?m today. 
+例如，在过去的30年中，我们目睹晶体管沟道长度从1970年的10？m稳定下降了两个数量级，到今天的不到0.1？m。
+
+ While this reduction of(减少) feature(特征) size benefits(好处) analog(模拟) and digital 
+circuits(电路) alike, overall analog circuit performance is compromised(连累) by other trends(趋势) such as 
+reduced supply voltages.
+虽然这种特征尺寸的减小有利于模拟和数字电路，但整体模拟电路性能受到其他趋势的影响，例如电源电压降低。
 
 */
 
