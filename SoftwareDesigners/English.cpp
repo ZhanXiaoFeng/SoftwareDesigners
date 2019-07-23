@@ -27,7 +27,6 @@ Each company had chosen a particular(特定的) version of Unix to start with, a
 various(各种各样的) proprietary(私人的) features. 
 每个公司都挑选一个特定版本的Unix作为基础，添加各式各样定制的特性。
 
-
 Although all of these operating systems claimed(声称) to be Unix, software written on one 
 version was often not portable to the other versions.
 尽管所有的这些操作系统都声称自己是Unix，软件在一个版本开发通常很难移植到另一个版本。
@@ -56,7 +55,7 @@ definition of Unix to enhance(提高) software portability(可移植性).
 当GNU项目开始启动，其他努力于 至少一个标准定义于Unix 为了提高软件的可移植性。
 
 One such effort was the formation(形成) of the IEEE 1003 standards committee(委员会), 
-which would go on toproduce(产出) the set of standards known as the 
+which would go on to produce(产出) the set of standards known as the 
 Portable Operating System Interface（POSIX 可移植操作系统接口）.
 其中之一就是IEEE 1003标准委员会的成立，将生产一套标准 被称为POSIX。
 
@@ -159,9 +158,8 @@ For example, over the past 30 years we have witnessed(目睹) a steady(稳定) d
 by two orders of magnitude(数量级) from 10?m in 1970 to less than 0.1?m today. 
 例如，在过去的30年中，我们目睹晶体管沟道长度从1970年的10？m稳定下降了两个数量级，到今天的不到0.1？m。
 
- While this reduction of(减少) feature(特征) size benefits(好处) analog(模拟) and digital 
-circuits(电路) alike, overall analog circuit performance is compromised(连累) by other trends(趋势) such as 
-reduced supply voltages.
+ While this reduction of(减少) feature(特征) size benefits(好处) analog(模拟) and digital circuits(电路) alike, 
+ overall analog circuit performance is compromised(连累) by other trends(趋势) such as reduced supply voltages.
 虽然这种特征尺寸的减小有利于模拟和数字电路，但整体模拟电路性能受到其他趋势的影响，例如电源电压降低。
 
 */
