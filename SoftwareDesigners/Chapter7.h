@@ -22,6 +22,7 @@
 */
 class Chapter7
 {
+public:
 	Chapter7();
 
 	/* 7.3 设计模式
